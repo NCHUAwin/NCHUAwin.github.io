@@ -1,0 +1,294 @@
+{
+    "studying": [
+      {
+        "name": "陳昱丞",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/陳昱丞.png",
+        "links" : "https://github.com/sc0210"
+      },
+      {
+        "name": "呂淳昇",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/呂淳昇.png",
+        "links" : ""
+      },
+      {
+        "name": "陳宥云",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/陳宥云.png",
+        "links" : ""
+      },
+      {
+        "name": "陳珮禎",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/陳珮禎.png",
+        "links" : ""
+      },
+      {
+        "name": "張黛妤",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/張黛妤.png",
+        "links" : ""
+      },
+      {
+        "name": "羅泓喆",
+        "degree":"master",
+        "grade": "112",
+        "img": "assets/img/member/112/羅泓喆.png",
+        "links" : ""
+      },
+      {
+        "name": "許心耀",
+        "degree":"doctor",
+        "grade": "",
+        "img": "assets/img/member/許心耀.png",
+        "links" : ""
+      },
+      {
+        "name": "劉冠伯",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/劉冠伯.png",
+        "links" : ""
+      },
+      {
+        "name": "吳偉政",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/吳偉政.png",
+        "links" : ""
+      },
+      {
+        "name": "吳楚熙",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/吳楚熙.png",
+        "links" : ""
+      },
+      {
+        "name": "簡紹鈞",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/簡紹鈞.png",
+        "links" : ""
+      },
+      {
+        "name": "蔡詳羿",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/蔡詳羿.png",
+        "links" : ""
+      },
+      {
+        "name": "陳信宇",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/113/陳信宇.png",
+        "links" : ""
+      }
+    ],
+    "alumni": [
+      {
+        "name": "87",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/87.jpg",
+        "links" : ""
+      },
+      {
+        "name": "cc",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/cc.jpg",
+        "links" : ""
+      },
+      {
+        "name": "cody",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/cody.jpg",
+        "links" : ""
+      },
+      {
+        "name": "frank",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/frank.jpg",
+        "links" : ""
+      },
+      {
+        "name": "Harvey",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/Harvey.jpg",
+        "links" : ""
+      },
+      {
+        "name": "jar",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/jar.jpg",
+        "links" : ""
+      },
+      {
+        "name": "jun",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/jun.jpg",
+        "links" : ""
+      },
+      {
+        "name": "kelly",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/kelly.jpg",
+        "links" : ""
+      },
+      {
+        "name": "lion",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/lion.jpg",
+        "links" : ""
+      },
+      {
+        "name": "shan",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/shan.jpg",
+        "links" : ""
+      },
+      {
+        "name": "shian",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/shian.jpg",
+        "links" : ""
+      },
+      {
+        "name": "William",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/William.jpg",
+        "links" : ""
+      },
+      {
+        "name": "wu",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/wu.jpg",
+        "links" : ""
+      },
+      {
+        "name": "yue",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/yue.jpg",
+        "links" : ""
+      },
+      {
+        "name": "yuzu",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/yuzu.jpg",
+        "links" : ""
+      },
+      {
+        "name": "劉承諺",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/劉承諺.jpg",
+        "links" : ""
+      },
+      {
+        "name": "吳允呈",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/吳允呈.jpg",
+        "links" : ""
+      },
+      {
+        "name": "廖品豪",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/廖品豪.jpg",
+        "links" : ""
+      },
+      {
+        "name": "林璟翔",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/林璟翔.jpg",
+        "links" : ""
+      },
+      {
+        "name": "陳煜",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/陳煜.jpg",
+        "links" : ""
+      },
+      {
+        "name": "陳原禾",
+        "degree":"mater",
+        "grade": "",
+        "img": "assets/img/member/alumni/陳原禾.JPG",
+        "links" : ""
+      },
+      {
+        "name": "謝嘉祐",
+        "degree":"doctor",
+        "grade": "",
+        "img": "assets/img/member/alumni/謝嘉祐.JPG",
+        "links" : ""
+      },
+      {
+        "name": "許佩慈",
+        "degree":"master",
+        "grade": "",
+        "img": "assets/img/member/alumni/許佩慈.jpg",
+        "links" : ""
+      },
+      {
+        "name": "蘇亭云",
+        "degree":"master",
+        "grade": "111",
+        "img": "assets/img/member/alumni/蘇亭云.jpg",
+        "links" : ""
+      },
+      {
+        "name": "董晏銘",
+        "degree":"master",
+        "grade": "111",
+        "img": "assets/img/member/alumni/董晏銘.jpg",
+        "links" : ""
+      },
+      {
+        "name": "白繹程",
+        "degree":"mater",
+        "grade": "111",
+        "img": "assets/img/member/alumni/白繹程.jpg",
+        "links" : ""
+      },
+      {
+        "name": "楊敦富",
+        "degree":"mater",
+        "grade": "111",
+        "img": "assets/img/member/alumni/楊敦富.jpg",
+        "links" : ""
+      },
+      {
+        "name": "徐凱瑞",
+        "degree":"mater",
+        "grade": "111",
+        "img": "assets/img/member/alumni/徐凱瑞.jpg",
+        "links" : ""
+      }
+      
+    ]
+}

@@ -14,7 +14,8 @@
       "indexers": [
         "EI",
         "ISTP"
-      ]
+      ],
+      "tag":"represent"
     },
     {
       "title": "An Efficient Traceback Scheme in WSN",
@@ -133,7 +134,7 @@
       "volume": "Volume 6776",
       "pages": "677600",
       "month": "",
-      "year": "",
+      "year": 2007,
       "indexers": []
     },
     {
@@ -148,7 +149,7 @@
       "volume": "Volume 6776",
       "pages": "677605",
       "month": "",
-      "year": "",
+      "year": 2007,
       "indexers": []
     },
     {
@@ -237,7 +238,7 @@
       "volume": "",
       "pages": "",
       "month": "",
-      "year": "",
+      "year": 2008,
       "indexers": []
     },
     {
@@ -252,7 +253,7 @@
       "volume": "",
       "pages": "",
       "month": "",
-      "year": "",
+      "year": 2008,
       "indexers": []
     },
     {
@@ -289,7 +290,8 @@
         "鄭伯炤",
         "陳煥"
       ],
-      "conference": "accepted WASN 2008"
+      "conference": "accepted WASN 2008",
+      "year": 2008
     },
     {
       "title": "Lifetime-Efficient Sensor Relocation Strategies for Mobile Sensor Networks",
@@ -300,7 +302,8 @@
         "陳煥"
       ],
       "conference": "2008全國電信研討會",
-      "details": "Dec. 5-6, 2008, 虎尾科技大學"
+      "details": "Dec. 5-6, 2008, 虎尾科技大學",
+      "year": 2008
     },
     {
       "title": "T-SecAODV: A Good IDS Response Protocol for MANET",
@@ -312,7 +315,8 @@
         "廖國潭"
       ],
       "conference": "CISC 2007",
-      "details": "No. ISC07_N1642, June 2007, NCU."
+      "details": "No. ISC07_N1642, June 2007, NCU.",
+      "year": 2007
     },
     {
       "title": "Efficient Error-Correction Inference Engine by Using Learning HMM for ADL Recognition",
@@ -333,7 +337,8 @@
         "陳煥"
       ],
       "conference": "TANET 2008",
-      "details": "10 月20~22日, 高雄"
+      "details": "10 月20~22日, 高雄",
+      "year": 2008
     },
     {
       "title": "An Efficient Packet Marking Probabilistic Algorithm for Minimizing the Convergence Time in Hierarchical Wireless Sensor Networks",

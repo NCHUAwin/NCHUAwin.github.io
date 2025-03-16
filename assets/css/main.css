@@ -1,6 +1,6 @@
 /**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Template Name: imember
+* Template URL: https://bootstrapmade.com/imember-bootstrap-member-websites-template/
 * Updated: Jun 29 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -163,7 +163,7 @@ h6 {
 .header .profile-img img {
   margin: 15px auto;
   display: block;
-  width: 200px;
+  width: 150px;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
@@ -567,7 +567,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
+  background: color-mix(in srgb, var(--background-color), transparent 45%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -580,13 +580,14 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 80px;
   font-weight: 700;
 }
 
 .hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .hero p span {
@@ -781,16 +782,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# member Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.member .member-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.member .member-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -803,21 +804,21 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.member .member-filters li:hover,
+.member .member-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.member .member-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.member .member-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .member .member-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
@@ -838,16 +839,16 @@ section,
   object-position: center; /* This ensures the center of the image is kept */
 }
 
-.portfolio .portfolio-content {
+.member .member-content {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.member .member-content img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.member .member-content .member-info {
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -857,7 +858,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.member .member-content .member-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
@@ -866,7 +867,7 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.member .member-content .member-info p {
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -878,8 +879,8 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.member .member-content .member-info .preview-link,
+.member .member-content .member-info .details-link {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -889,22 +890,22 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.member .member-content .member-info .preview-link:hover,
+.member .member-content .member-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
+.member .member-content .member-info .details-link {
   left: 50%;
   font-size: 34px;
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info {
+.member .member-content:hover .member-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
+.member .member-content:hover img {
   transform: scale(1.1);
 }
 
@@ -1160,19 +1161,19 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# member Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.member-details .member-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.member-details .member-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.member-details
+  .member-details-slider
   .swiper-pagination
   .swiper-pagination-bullet {
   width: 12px;
@@ -1181,19 +1182,19 @@ section,
   opacity: 1;
 }
 
-.portfolio-details
-  .portfolio-details-slider
+.member-details
+  .member-details-slider
   .swiper-pagination
   .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.member-details .member-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.member-details .member-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1202,27 +1203,27 @@ section,
     color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.member-details .member-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.member-details .member-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.member-details .member-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.member-details .member-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.member-details .member-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }

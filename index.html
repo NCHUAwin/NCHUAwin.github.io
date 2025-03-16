@@ -34,7 +34,7 @@
 
   <!-- =======================================================
   * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template URL: https://bootstrapmade.com/imember-bootstrap-member-websites-template/
   * Updated: Jun 29 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -68,36 +68,35 @@
         <li>
           <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
         </li>
-        <li>
-          <a href="#professor"><i class="bi bi-person-badge navicon"></i> Professor</a>
-        </li>
-        <li>
-          <a href="#publication"><i class="bi bi-book navicon"></i> Publications</a>
-        </li>
-        <li>
-          <a href="#labinfo"><i class="bi bi-diagram-3 navicon"></i> About Lab</a>
-        </li>
-        <li>
-          <a href="#member"><i class="bi bi-person-bounding-box navicon"></i> Members</a>
-        </li>
-        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> </a></li> -->
-        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#professor"><i class="bi bi-person-lines-fill navicon"></i> <span>Professor</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
+            <li>
+              <a href="#professor"><i class="bi bi-person-vcard-fill navicon"></i> Profile</a>
             </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
+            <li>
+              <a href="#lecture"><i class="bi bi-book navicon"></i> Lecture</a>
+            </li>
+            <li>
+              <a href="#publication"><i class="bi bi-journal-bookmark-fill navicon"></i> Publications</a>
+            </li>
+
           </ul>
-        </li> -->
+        </li>
+
+        <li class="dropdown"><a href="#labinfo"><i class="bi bi-menu-button navicon"></i> <span>Labatory</span> <i
+              class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li>
+              <a href="#labinfo"><i class="bi bi-diagram-3 navicon"></i> Research interests</a>
+            </li>
+            <li>
+              <a href="#member"><i class="bi bi-person-bounding-box navicon"></i> Members</a>
+            </li>
+          </ul>
+        </li>
+
+
         <li>
           <a href="#joinus"><i class="bi bi-person-raised-hand navicon"></i> Join us</a>
         </li>
@@ -114,7 +113,8 @@
       <img src="assets/img/lab/index2.jpg" alt="" data-aos="fade-in" class="" />
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>AWIN lab 前瞻無線網路實驗室</h2>
+        <h2>AWIN lab</h2>
+        <h2>前瞻無線資訊網路實驗室</h2>
         <p>
           We focused on
           <span class="typed" data-typed-items="Artifical Intelligence, Wireless sensor network, ECG, ">Artifical
@@ -131,13 +131,13 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
         <h2>Professor</h2>
-        <div class="row align-items-center">
+        <div class="row d-lg-flex align-items-center">
           <!-- Image Column -->
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-12 text-center">
             <img src="assets/img/lab/professor.png" class="img-fluid" alt="" />
           </div>
           <!-- Text Column -->
-          <div class="col-lg-9">
+          <div class="col-lg-9 col-sm-12">
             <p>
               <b>Huan Chen</b> received his B.S. and M.S. (Electrical
               Engineering) degrees from the National Tsing HuaUniversity,
@@ -165,7 +165,7 @@
       <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-12 content justify-content-center">
+        <div class="content col-lg-12 justify-content-center">
           <!-- <h2>UI/UX Designer &amp; Web Developer.</h2>
             <p class="fst-italic py-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -257,6 +257,7 @@
             </tbody>
           </table>
 
+
           <!-- <p class="py-3">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
@@ -264,7 +265,82 @@
         </div>
       </div>
     </section>
-    <!-- /About Section -->
+    <section id="lecture" class="about section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+        <h2>Lecture</h2>
+        <table class="min-w-full border border-gray-300">
+          <thead>
+            <tr>
+              <th>課程編號</th>
+              <th>課程名稱</th>
+              <th>上課地點/時間</th>
+              <th>課程說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3311</td>
+              <td>智慧物聯網應用與實作 Artificial Intelligent Internet of Things (AIoT) Application and Implementation</td>
+              <td>S821/2234</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1132&v_class_nbr=3795">Links</a>
+              </td>
+            </tr>
+            <tr>
+              <td>6651</td>
+              <td>深度強化學習 Deep Reinforcement Learning</td>
+              <td>S821/3234</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1132&v_class_nbr=3629">Links</a>
+              </td>
+            </tr>
+            <tr>
+              <td>7764</td>
+              <td>深度強化學習 Deep Reinforcement Learning</td>
+              <td>S821/3ABC</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1132&v_class_nbr=3629">Links</a>
+              </td>
+            </tr>
+            <tr style="color: #d3d3d3">
+              <td>2292</td>
+              <td>線性代數 Linear Algebra</td>
+              <td>AT242/1234</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1131&v_class_nbr=2280">Links</a>
+              </td>
+            </tr>
+            <tr style="color: #d3d3d3">
+              <td>6679</td>
+              <td>物聯網數據分析與應用 Internet of Things (IoT) Data Analysis and Applications</td>
+              <td>S821/3234</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1131&v_class_nbr=4458">Links</a>
+              </td>
+            </tr>
+            <tr style="color: #d3d3d3">
+              <td>7716</td>
+              <td>物聯網應用與資料分析 Internet of Things Applications and Data Analysis</td>
+              <td>S821/3ABC</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1131&v_class_nbr=4234">Links</a>
+              </td>
+            </tr>
+            <tr style="color: #d3d3d3">
+              <td>7972</td>
+              <td>人工智慧與資訊安全 Artifical Intelligence and Information Security</td>
+              <td>U318/1ABC</td>
+              <td><a
+                  href="https://onepiece.nchu.edu.tw/cofsys/plsql/Syllabus_main?v_strm=1131&v_class_nbr=4748">Links</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+    </section>
+
 
     <!-- Publication Section -->
     <section id="publication" class="resume section">
@@ -278,11 +354,28 @@
           </p>
           <a href="https://scholar.google.com/citations?hl=zh-TW&user=EpJt0WEAAAAJ">Google Scholar</a>
 
-          <div class="container">
-            <div class="content justify-content-center" id="journal-container">
-              <!-- The journal entries will be inserted here by JavaScript -->
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="container">
+              <!-- Filter and Sort Options -->
+              <div class="filter-sort-container">
+                <select id="filter-select">
+                  <option value="all">All Publications</option>
+                  <option value="Recent">Recent 5 Years</option>
+                  <option value="Represent">Represent</option>
+                </select>
+
+                <select id="sort-select">
+                  <option value="year">Sort by Year</option>
+                  <option value="title">Sort by Title</option>
+                </select>
+              </div>
+
+              <div class="content justify-content-center" id="journal-container">
+                <!-- The journal entries will be inserted here by JavaScript -->
+              </div>
+
+              <script src="assets/js/convert_publication.js"></script>
             </div>
-            <script src="assets/js/convert_publication.js"></script>
           </div>
         </div>
       </div>
@@ -292,493 +385,141 @@
     <!-- labinfo Section -->
     <section id="labinfo" class="services section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Lab</h2>
+        <div class="content justify-content-center">
+          <h2>About Lab</h2>
 
-        <div class="overflow-x-auto">
-          <table class="min-w-full border border-gray-300">
-            <thead>
-              <tr class="bg-gray-200">
-                <th class="border border-gray-300 px-4 py-2 text-center">研究主題</th>
-                <th class="border border-gray-300 px-4 py-2 text-center">研究內容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
-                  無線感測網路 & 6G
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-left">
-                  本研究主要使用強化式學習與啟發式演算法來探討有關無線感測網路(Wireless Sensor Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。<br>
-                  <b>研究範圍：</b><br>
-                  (1) 存取控制 (Admission Control)<br>
-                  (2) 壽命最佳化 (Lifetime Optimization)<br>
-                  (3) 路由策略建構 (Routing strategy construction)<br>
-                  (4) 最佳化排程 (Schedule Optimization)<br>
-                  <div class="mt-2 flex space-x-2">
-                    <img src="../photo/team/陳信宇.png" alt="陳信宇" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/陳昱丞.png" alt="陳昱丞" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/陳珮禎.png" alt="陳珮禎" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/呂淳昇.png" alt="呂淳昇" class="w-12 h-12 rounded-full">
-                  </div>
-                </td>
-              </tr>
+          <div class="overflow-x-auto">
+            <table class="min-w-full border border-gray-300">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="border border-gray-300 px-4 py-2 text-center">研究主題</th>
+                  <th class="border border-gray-300 px-4 py-2 text-center">研究內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
+                    無線感測網路 & 6G
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2 text-left">
+                    本研究主要使用強化式學習與啟發式演算法來探討有關無線感測網路(Wireless Sensor Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。<br>
+                    <b>研究範圍：</b><br>
+                    (1) 存取控制 (Admission Control)<br>
+                    (2) 壽命最佳化 (Lifetime Optimization)<br>
+                    (3) 路由策略建構 (Routing strategy construction)<br>
+                    (4) 最佳化排程 (Schedule Optimization)<br>
+                    <!-- <div class="mt-2 flex space-x-2">
+                      <img src="../photo/team/陳信宇.png" alt="陳信宇" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/陳昱丞.png" alt="陳昱丞" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/陳珮禎.png" alt="陳珮禎" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/呂淳昇.png" alt="呂淳昇" class="w-12 h-12 rounded-full">
+                    </div> -->
+                  </td>
+                </tr>
 
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
-                  智慧家庭與智能生活
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-left">
-                  在智慧家庭與智能生活的應用範圍內，發展綠化節能的應用服務，如：<br>
-                  (1) 智慧家庭內的電器狀態監控<br>
-                  (2) 智慧電網系統架構內的AMI (Advanced Metering Infrastructure)<br>
-                  (3) 電力需求面管理 (DSM)<br>
-                  (4) 需量反應計畫 (DRP)<br>
-                  <div class="mt-2 flex space-x-2">
-                    <img src="../photo/team/張黛妤.png" alt="張黛妤" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/許心耀.png" alt="許心耀" class="w-12 h-12 rounded-full">
-                  </div>
-                </td>
-              </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
+                    智慧家庭與智能生活
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2 text-left">
+                    在智慧家庭與智能生活的應用範圍內，發展綠化節能的應用服務，如：<br>
+                    (1) 智慧家庭內的電器狀態監控<br>
+                    (2) 智慧電網系統架構內的AMI (Advanced Metering Infrastructure)<br>
+                    (3) 電力需求面管理 (DSM)<br>
+                    (4) 需量反應計畫 (DRP)<br>
+                    <!-- <div class="mt-2 flex space-x-2">
+                      <img src="../photo/team/張黛妤.png" alt="張黛妤" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/許心耀.png" alt="許心耀" class="w-12 h-12 rounded-full">
+                    </div> -->
+                  </td>
+                </tr>
 
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
-                  智慧無人載具
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-left">
-                  本研究基於深度學習與啟發式演算法，結合智慧無人載具發展創新研究。<br>
-                  (1) LiDAR與光學影像進行3D重建<br>
-                  (2) 深度學習物件追蹤應用於違規停車科技執法<br>
-                  <div class="mt-2 flex space-x-2">
-                    <img src="../photo/team/陳宥云.png" alt="陳宥云" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/羅泓喆.png" alt="羅泓喆" class="w-12 h-12 rounded-full">
-                  </div>
-                </td>
-              </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
+                    智慧無人載具
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2 text-left">
+                    本研究基於深度學習與啟發式演算法，結合智慧無人載具發展創新研究。<br>
+                    (1) LiDAR與光學影像進行3D重建<br>
+                    (2) 深度學習物件追蹤應用於違規停車科技執法<br>
+                    <!-- <div class="mt-2 flex space-x-2">
+                      <img src="../photo/team/陳宥云.png" alt="陳宥云" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/羅泓喆.png" alt="羅泓喆" class="w-12 h-12 rounded-full">
+                    </div> -->
+                  </td>
+                </tr>
 
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
-                  工業4.0與智慧醫療
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-left">
-                  針對工業4.0、智慧工廠與智慧生醫進行開發，研究重點包括：<br>
-                  (1) 心電圖(ECG)無線傳輸中的雜訊與封包遺失問題<br>
-                  (2) 長時、可靠與隱私保護的無線傳輸技術<br>
-                  <div class="mt-2 flex space-x-2">
-                    <img src="../photo/team/羅泓喆.png" alt="羅泓喆" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/陳昱丞.png" alt="陳昱丞" class="w-12 h-12 rounded-full">
-                    <img src="../photo/team/陳宥云.png" alt="陳宥云" class="w-12 h-12 rounded-full">
-                  </div>
-                </td>
-              </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2 font-semibold align-top">
+                    工業4.0與智慧醫療
+                  </td>
+                  <td class="border border-gray-300 px-4 py-2 text-left">
+                    針對工業4.0、智慧工廠與智慧生醫進行開發，研究重點包括：<br>
+                    (1) 心電圖(ECG)無線傳輸中的雜訊與封包遺失問題<br>
+                    (2) 長時、可靠與隱私保護的無線傳輸技術<br>
+                    <!-- <div class="mt-2 flex space-x-2">
+                      <img src="../photo/team/羅泓喆.png" alt="羅泓喆" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/陳昱丞.png" alt="陳昱丞" class="w-12 h-12 rounded-full">
+                      <img src="../photo/team/陳宥云.png" alt="陳宥云" class="w-12 h-12 rounded-full">
+                    </div> -->
+                  </td>
+                </tr>
 
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
 
-
     <!-- Member Section -->
-    <section id="member" class="portfolio section light-background">
+    <section id="member" class="member section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Member</h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-          sit in iste officiis commodi quidem hic quas.
-        </p>
-      </div>
-      <!-- End Section Title -->
+        <div class="content justify-content-center">
+          <h2>Member</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+            sit in iste officiis commodi quidem hic quas.
+          </p>
+          <!-- End Section Title -->
+        </div>
+        <div class="content">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-graduated">graduated</li>
-            <li data-filter=".filter-doctor">doctor</li>
-            <li data-filter=".filter-master">master</li>
-            <li data-filter=".filter-studying">studying</li>
-          </ul>
-          <!-- End Portfolio Filters -->
+            <ul class="member-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-alumni">alumni</li>
+              <li data-filter=".filter-doctor">doctor</li>
+              <li data-filter=".filter-master">master</li>
+              <li data-filter=".filter-studying">studying</li>
+            </ul>
+            <!-- End member Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-doctor">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-
-                  <img src="assets/img/member/許心耀.png" class="img-fluid" alt="" />
-
-                  <div class="portfolio-info">
-                    <h4>許心耀</h4>
-                    <p>許心耀 </p>
-                    <a href="assets/img/member/許心耀.png" title="" data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://github.com" title="More Details" class="details-link"><i
-                        class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-
-                  <img src="assets/img/member/112/呂淳昇.png" class="img-fluid" alt="" />
-
-                  <div class="portfolio-info">
-                    <h4>呂淳昇</h4>
-                    <p>112 呂淳昇 </p>
-                    <a href="assets/img/member/112/呂淳昇.png" title="" data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://github.com" title="More Details" class="details-link"><i
-                        class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-
-                  <img src="assets/img/member/112/陳昱丞.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>陳昱丞</h4>
-                    <p>112 陳昱丞</p>
-                    <a href="assets/img/member/112/陳昱丞.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/112/張黛妤.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>張黛妤</h4>
-                    <p>112 張黛妤</p>
-                    <a href="assets/img/member/112/張黛妤.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/112/羅泓喆.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>羅泓喆</h4>
-                    <p>112 羅泓喆</p>
-                    <a href="assets/img/member/112/羅泓喆.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/112/陳宥云.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>陳宥云</h4>
-                    <p>112 陳宥云</p>
-                    <a href="assets/img/member/112/陳宥云.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/劉冠伯.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>劉冠伯</h4>
-                    <p>113 劉冠伯</p>
-                    <a href="assets/img/member/113/劉冠伯.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/吳偉政.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>吳偉政</h4>
-                    <p>113 吳偉政</p>
-                    <a href="assets/img/member/113/吳偉政.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/楊啟弘.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>楊啟弘</h4>
-                    <p>113 楊啟弘</p>
-                    <a href="assets/img/member/113/楊啟弘.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/吳楚熙.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>吳楚熙</h4>
-                    <p>113 吳楚熙</p>
-                    <a href="assets/img/member/113/吳楚熙.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/簡紹鈞.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>簡紹鈞</h4>
-                    <p>113 簡紹鈞</p>
-                    <a href="assets/img/member/113/簡紹鈞.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/蔡詳羿.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>蔡詳羿</h4>
-                    <p>113 蔡詳羿</p>
-                    <a href="assets/img/member/113/蔡詳羿.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-studying filter-master">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/113/陳信宇.png" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4>陳信宇</h4>
-                    <p>113 陳信宇</p>
-                    <a href="assets/img/member/113/陳信宇.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/87.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/graduated/87.png" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/cc.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/cc.jpg" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/cody.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/cody.jpg" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/frank.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/frank.jpg" title=""
-                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                        class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/Harvey.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/Harvey.jpg" title=""
-                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                        class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/jar.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/jar.jpg" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/kelly.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/kelly.jpg" title=""
-                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                        class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graduated">
-              <div class="portfolio-content h-100">
-                <div class="image-container">
-                  <img src="assets/img/member/graduated/lion.jpg" class="img-fluid" alt="" />
-                  <div class="portfolio-info">
-                    <h4></h4>
-                    <p></p>
-                    <a href="assets/img/member/112/graduated/lion.jpg" title="" data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div id="members-container" class="row"></div>
+              <!-- The actual member items will be injected here -->
+              <script src="assets/js/getMember.js"></script>
             </div>
             <!-- End Portfolio Item -->
           </div>
-          <!-- End Portfolio Container -->
         </div>
       </div>
     </section>
     <!-- /Member Section -->
 
-
     <!-- joinus Section -->
-    <section id="joinus" class="services section">
+    <section id="joinus" class="services section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>How to join us?</h2>
-        <div class="container justify-content-center">
+        <div class="content justify-content-center">
+          <h2>How to join us?</h2>
+
           <p>
             同學你好，我是陳煥老師。今年我將指導七位碩士班新生，歡迎你們加入！我的專長可參考這裡。目前實驗室有 3 位博士生、6 位碩二生、7 位碩一生，大家將互相學習、共同成長。
           </p>
-
           <h3>1.實驗室介紹</h3>
           <p>
             本實驗室名為 <strong>前瞻無線資訊網路實驗室</strong> (Advanced Wireless Information Networks)，成立於 2003 年 2 月。最初 9 年
@@ -794,13 +535,13 @@
             <li>綠能資訊與嵌入式系統開發</li>
             <li>手機程式設計、網站前後端開發、雲端應用</li>
           </ul>
-        </div>
 
-        <div class="container justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <h3>3.近期研究重點</h3>
+          <!-- Recent Research Section -->
+          <div class="container row">
+            <h3>3.近期研究重點</h3>
 
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <!-- Research Item 1 -->
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-briefcase"></i>
               </div>
@@ -809,20 +550,20 @@
                 <p class="description"> 研究無人車、無人機 (UAV)及其應用，如交通違規偵測、違規停車識別，結合深度學習、LiDAR及光學圖像重建技術。</p>
               </div>
             </div>
-            <!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <!-- Research Item 2 -->
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-card-checklist"></i>
               </div>
               <div>
                 <h4 class="title"> <a href="" class="stretched-link">前瞻無線網路最佳化技術</a></h4>
-                <p class="description">透過強化學習與啟發式演算法，探討 5G 網路壽命最佳化、存取控制與最佳化排程等議題，並開始 6G 相關研究。 </p>
+                <p class="description">透過強化學習與啟發式演算法，探討 5G 網路壽命最佳化、存取控制與最佳化排程等議題，並開始 6G 相關研究。</p>
               </div>
             </div>
 
-            <!-- End Service Item -->
-            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <!-- Research Item 3 -->
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0">
                 <i class="bi bi-bar-chart"></i>
               </div>
@@ -830,13 +571,10 @@
                 <h4 class="title">
                   <a href="service-details.html" class="stretched-link">智慧電表資訊安全與滲透防護</a>
                 </h4>
-                <p class="description"> 開發智慧家庭電表控管技術，如電器狀態監控、智慧電網系統與電力需求管理等應用。 </p>
+                <p class="description"> 開發智慧家庭電表控管技術，如電器狀態監控、智慧電網系統與電力需求管理等應用。</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="container justify-content-center" data-aos="fade-up" data-aos-delay="100">
 
           <h3>4.聯絡方式</h3>
           <p>
@@ -853,10 +591,10 @@
           <p>
             在職專班生指導事宜，請聯繫 <strong>陳煥老師</strong> (<a href="mailto:huan@nchu.edu.tw">huan@nchu.edu.tw</a>)。
           </p>
+
         </div>
         <!-- End Section Title -->
 
-      </div>
     </section>
     <!-- /joinus Section -->
 
