@@ -1,0 +1,252 @@
+.container {
+    display: flex; /* 讓內容水平排列 */
+    align-items: flex-start; /* 垂直對齊 */
+    gap: 60px; /* 圖片與文字之間的間距 */
+    padding: 90px;
+    flex-wrap: wrap; /* 當螢幕變小時自動換行 */
+    justify-content: center; 
+    max-width: 100%; /* 容器最大寬度 */
+}
+
+.img-container {
+    position: relative;
+    width: 160px;
+    height: 185px;
+}
+
+.img-normal, .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.img-hover {
+    opacity: 0; /* 隱藏懸停圖片 */
+}
+
+.img-container:hover .img-hover {
+    opacity: 1; /* 懸停時顯示圖片 */
+    transform: scale(1.2); /* 放大 1.2 倍 */
+    z-index: 2;
+}
+
+.img-container:hover .img-normal {
+    opacity: 0; /* 懸停時隱藏普通圖片 */
+}
+
+/* 文字樣式 */
+.img-text {
+    position: absolute;
+    bottom: 10px; /* 讓文字顯示在圖片底部 */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap; /* 防止文字換行 */
+    z-index: 3; /* 設置文字的層級高於圖片 */
+}
+
+/* 正常顯示的文字 */
+.img-container .normal-text {
+    opacity: 1; /* 預設顯示 */
+}
+
+/* 懸停時顯示另一種文字 */
+.img-container:hover .normal-text {
+    opacity: 0; /* 隱藏正常顯示的文字 */
+}
+
+.img-container:hover .hover-text {
+    opacity: 1; /* 顯示懸停顯示的文字 */
+}
+
+.container1 {
+    display: inline; /* 讓容器像一行文字一樣排列 */
+    padding: 0; /* 去除內邊距 */
+    margin: 10px 20px; /* 控制間距 */
+}
+
+.title {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Caveat", serif;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+    background-color:  #00ccff; /* 設定背景顏色 */
+    border-radius: 5px; /* 可選，為標題區域添加圓角 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.title:hover {
+    color: #464646;
+    background-color:  #00ccff; /* 設定背景顏色 */
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.toggle {
+    display: none; /* 隱藏 checkbox */
+}
+
+/* 當 checkbox 被選中時，顯示內容 */
+.toggle:checked + .content {
+    display: block;
+}
+
+/* 當 checkbox 被選中時，改變 icon */
+.toggle:checked + .content + .title .icon {
+    transform: rotate(180deg); /* 旋轉 icon */
+}
+
+.content {
+    display: none; /* 默認隱藏 */
+    padding: 10px;
+    background: none; /* 去掉背景顏色 */
+    margin-top: 0px;
+    color: #666; /* 內容文字顏色 */
+}
+
+
+/* 手機版樣式(懸停照片相反) */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex; /* 讓內容水平排列 */
+        align-items: flex-start; /* 垂直對齊 */
+        gap: 60px; /* 圖片與文字之間的間距 */
+        padding: 30px;
+        flex-wrap: wrap; /* 當螢幕變小時自動換行 */
+        justify-content: center; 
+        max-width: 100%; /* 容器最大寬度 */
+    }
+    
+    .img-container {
+        position: relative;
+        width: 160px;
+        height: 185px;
+        pointer-events: none;
+    }
+    
+    .img-normal, .img-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.1s ease-in-out;
+    }
+    
+    .img-hover {
+        opacity: 1; /* 隱藏懸停圖片 */
+    }
+    
+    .img-container:hover .img-hover {
+        opacity: 0; /* 懸停時顯示圖片 */
+        transform: scale(1.2); /* 放大 1.2 倍 */
+        z-index: 3;
+    }
+    
+    .img-container:hover .img-normal {
+        opacity: 1; /* 懸停時隱藏普通圖片 */
+    }
+    
+    /* 文字樣式 */
+    .img-text {
+        position: absolute;
+        bottom: 10px; /* 讓文字顯示在圖片底部 */
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+        opacity: 0; /* 預設隱藏 */
+        transition: opacity 0.3s ease-in-out;
+        white-space: nowrap; /* 防止文字換行 */
+        z-index: 3; /* 設置文字的層級高於圖片 */
+    }
+    
+    /* 正常顯示的文字 */
+    .img-container .normal-text {
+        opacity: 1; /* 預設顯示 */
+    }
+    
+    /* 懸停時顯示另一種文字 */
+    .img-container:hover .normal-text {
+        opacity: 0; /* 隱藏正常顯示的文字 */
+    }
+    
+    .img-container:hover .hover-text {
+        opacity: 1; /* 顯示懸停顯示的文字 */
+    }
+
+    .container1 {
+        display: inline; /* 讓容器像一行文字一樣排列 */
+        padding: 0; /* 去除內邊距 */
+        margin: 10px 20px; /* 控制間距 */
+    }
+    
+    .title {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Caveat", serif;
+        color: rgb(0, 0, 0);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: color 0.3s ease;
+        background-color:  #00ccff; /* 設定背景顏色 */
+        border-radius: 5px; /* 可選，為標題區域添加圓角 */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .title:hover {
+        color: #464646;
+        background-color:  #00ccff; /* 設定背景顏色 */
+    }
+    
+    .icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .toggle {
+        display: none; /* 隱藏 checkbox */
+    }
+    
+    /* 當 checkbox 被選中時，顯示內容 */
+    .toggle:checked + .content {
+        display: block;
+    }
+    
+    /* 當 checkbox 被選中時，改變 icon */
+    .toggle:checked + .content + .title .icon {
+        transform: rotate(180deg); /* 旋轉 icon */
+    }
+    
+    .content {
+        display: none; /* 默認隱藏 */
+        padding: 10px;
+        background: none; /* 去掉背景顏色 */
+        margin-top: 0px;
+        color: #666; /* 內容文字顏色 */
+    }
+}

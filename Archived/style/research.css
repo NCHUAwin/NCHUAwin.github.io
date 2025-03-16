@@ -1,0 +1,191 @@
+.circle-img {
+    width: 50px;  /* 圓形大小 */
+    height: 50px; /* 讓寬高相等，形成圓形 */
+    border-radius: 75%;
+    object-fit: cover; /* 確保圖片填滿圓形 */
+    display: block;
+    float: right;
+}
+
+#research-content strong {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    display: block; /* 讓 strong 變成 block，才會受 text-align 控制 */
+}
+
+
+/* 研究領域紙張效果 */
+.research-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+}
+
+/* 主要的中央紙張 */
+.paper {
+    margin-top: -5%;
+    height: 60%;
+    width: 40%; /* 讓紙張夠大 */
+    padding: 30px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    position: relative;
+    z-index: 2; /* 中間的紙張在最上層 */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    /* 新增滾動條 */
+    max-height: 400px;  /* 限制最大高度，超過時會滾動 */
+    overflow-y: auto;  /* 當內容過多時顯示垂直滾動條 */
+}
+
+/* 左右側的紙張 */
+.side-paper {
+    margin-top: -2%;
+    height: 60%;
+    width: 40%; /* 讓它跟 paper 一樣大 */
+    padding: 30px;
+    background: #f8f8f8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    position: absolute; /* 讓左右紙張疊在中間紙張後面 */
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8; /* 讓左右紙張稍微透明 */
+    cursor: pointer;
+    z-index: 1; /* 比中間紙張低，會被部分蓋住 */
+    
+    /* 新增滾動條 */
+    max-height: 400px;  /* 限制最大高度，超過時會滾動 */
+    overflow-y: auto;  /* 當內容過多時顯示垂直滾動條 */
+
+}
+
+/* 左側紙張 */
+#prev-research {
+    left: 3%; /* 調整位置 */
+}
+
+/* 右側紙張 */
+#next-research {
+    right: 3%; /* 調整位置 */
+}
+.fade-out-left {
+    transform: translateX(-10%) rotateY(90deg);
+    opacity: 0;
+}
+.fade-out-right {
+    transform: translateX(10%) rotateY(-90deg);
+    opacity: 0;
+}
+.fade-in {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+}
+
+/* 手機版樣式 */
+@media screen and (max-width: 768px) {
+    .circle-img {
+        width: 50px;  /* 圓形大小 */
+        height: 50px; /* 讓寬高相等，形成圓形 */
+        border-radius: 75%;
+        object-fit: cover; /* 確保圖片填滿圓形 */
+        display: block;
+        float: right;
+    }
+
+    #research-content strong {
+        font-size: 28px;
+        color: #000000;
+        text-align: center;
+        display: block; /* 讓 strong 變成 block，才會受 text-align 控制 */
+    }
+    
+    
+    /* 研究領域紙張效果 */
+    .research-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        position: relative;
+    }
+    
+    /* 主要的中央紙張 */
+    .paper {
+        margin-top: 0%;
+        height: 95%;
+        width: 65%; /* 讓紙張夠大 */
+        padding: 30px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: justify;
+        font-size: 18px;
+        font-family: 'Georgia', serif;
+        position: relative;
+        z-index: 2; /* 中間的紙張在最上層 */
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    
+        /* 新增滾動條 */
+        max-height: 400px;  /* 限制最大高度，超過時會滾動 */
+        overflow-y: auto;  /* 當內容過多時顯示垂直滾動條 */
+    }
+    
+    /* 左右側的紙張 */
+    .side-paper {
+        margin-top: -2%;
+        height: 90%;
+        width: 65%; /* 讓紙張夠大 */
+        padding: 30px;
+        background: #f8f8f8;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: justify;
+        font-size: 18px;
+        font-family: 'Georgia', serif;
+        position: absolute; /* 讓左右紙張疊在中間紙張後面 */
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.8; /* 讓左右紙張稍微透明 */
+        cursor: pointer;
+        z-index: 1; /* 比中間紙張低，會被部分蓋住 */
+        
+        /* 新增滾動條 */
+        max-height: 400px;  /* 限制最大高度，超過時會滾動 */
+        overflow-y: auto;  /* 當內容過多時顯示垂直滾動條 */
+    
+    }
+    
+    /* 左側紙張 */
+    #prev-research {
+        left: -4%; /* 調整位置 */
+        opacity: 0; /* 隱藏左側紙 */
+    }
+    
+    /* 右側紙張 */
+    #next-research {
+        right: -4%; /* 調整位置 */
+    }
+    .fade-out-left {
+        transform: translateX(-10%) rotateY(90deg);
+        opacity: 0;
+    }
+    .fade-out-right {
+        transform: translateX(10%) rotateY(-90deg);
+        opacity: 0;
+    }
+    .fade-in {
+        transform: translateX(0) rotateY(0);
+        opacity: 1;
+    }
+}

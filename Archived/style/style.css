@@ -1,0 +1,71 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0;padding-bottom: 100px; /* 確保內容不會被固定導覽欄擋住 */ }
+header { background: linear-gradient(45deg, #00ffae, #497c96); padding: 15px; text-align: center; }
+section { padding: 20px; text-align: center; }
+
+/* 新增華麗的導航欄 */
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #00ffae, #497c96);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+
+}
+nav a {
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+}
+nav a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    background: linear-gradient(0deg, #ffffff, #fffb00);
+    -webkit-background-clip: text; /* 讓背景只套用到文字 */
+    -webkit-text-fill-color: transparent; /* 讓文字變透明，顯示背景 */
+}
+
+/* 手機版樣式：當螢幕寬度小於等於 768px 時隱藏原有的導航欄並顯示漢堡按鈕 */
+@media screen and (max-width: 768px) {
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0;padding-bottom: 100px; /* 確保內容不會被固定導覽欄擋住 */ }
+    header { background: linear-gradient(45deg, #00ffae, #497c96); padding: 2px; text-align: center; font-size: 16px;}
+    section { padding: 20px; text-align: center; }
+    
+    /* 新增華麗的導航欄 */
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(45deg, #00ffae, #497c96);
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+        z-index: 3;
+    
+    }
+    nav a {
+        color: rgb(57, 57, 57);
+        text-decoration: none;
+        padding: 15px 2px;
+        margin: 0 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 10px;
+    }
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}

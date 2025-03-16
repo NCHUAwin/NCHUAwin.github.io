@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(224, 228, 227);
+    margin: 0; /* 確保沒有外邊距 */
+    padding: 0;
+    width: 100vw; /* 讓 body 填滿整個視窗 */
+    height: 100vh;
+    overflow-x: hidden; /* 防止水平滾動條 */
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.profile-container1 {
+    position: fixed;
+    left: 5%;
+    top: 7%; 
+    height: 60%; 
+    width: 60%; 
+    background-color: rgb(224, 228, 227); 
+    padding: 10px;
+}
+
+.profile-img1 {
+    width: 70%;
+    height: auto;
+}
+
+.profile-container2 {
+    position: fixed;
+    right: -8%;
+    top: -5%; /* 確保貼齊上方 */
+    height: 90%;
+    width: 50%;
+    max-width: 600px; /* 限制最大寬度，確保適應不同螢幕 */
+    background-color: rgb(224, 228, 227);
+    padding: 10px;
+}
+
+
+.profile-img2 {
+    width: 85%;
+    height: auto;
+}
+
+
+/* 手機版樣式 */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(224, 228, 227);
+        margin: 0; /* 確保沒有外邊距 */
+        padding: 0;
+        width: 100vw; /* 讓 body 填滿整個視窗 */
+        height: 100vh;
+        overflow-x: hidden; /* 防止水平滾動條 */
+    }
+    
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    
+    .profile-container1 {
+        position: fixed;
+        left: 0%;
+        top: 15%; 
+        height: 100%; 
+        width: 100%; 
+        background-color: rgb(224, 228, 227); 
+        padding: 10px;
+        z-index: 3;
+    }
+    
+    .profile-img1 {
+        width: 90%;
+        height: auto;
+    }
+    
+    .profile-container2 {
+        position: fixed;
+        right: -8%;
+        top: -5%; /* 確保貼齊上方 */
+        height: 180%;
+        width: 50%;
+        max-width: 600px; /* 限制最大寬度，確保適應不同螢幕 */
+        background-color: rgb(224, 228, 227);
+        padding: 10px;
+    }
+    
+    
+    .profile-img2 {
+        width: 0%;
+        height: auto;
+    }
+}
