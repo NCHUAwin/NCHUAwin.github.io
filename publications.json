@@ -1,268 +1,411 @@
 {
   "publications": [
-  {
-    "title": "Quality Assurance for Evidence Collection in Network Forensics",
-    "authors": ["Bo-Chao Cheng", "Huan Chen"],
-    "journal": "Lecture Notes in Computer Science (LNCS)",
-    "volume": "4298/2007",
-    "pages": "121-132",
-    "month": "May",
-    "year": 2007,
-    "indexers": ["EI", "ISTP"]
-  },
-  {
-    "title": "An Efficient Traceback Scheme in WSN",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Guo-Tan Liao"],
-    "journal": "Security and Communication Networks (Wiley)",
-    "volume": "Special Issue: Security in Wireless Sensor Networks Vol. 2, Issue 2",
-    "pages": "133-144",
-    "month": "Dec",
-    "year": 2008,
-    "indexers": []
-  },
-  {
-    "title": "A Novel Marking Probability Distribution Using Probability Propagation in Hierarchical WSN",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Guo-Tan Liao"],
-    "journal": "Lecture Notes in Computer Science (LNCS)",
-    "volume": "5487/2009",
-    "pages": "265-274",
-    "month": "April",
-    "year": 2009,
-    "indexers": ["EI", "ISTP"]
-  },
-  {
-    "title": "A Context-Aware Gateway for SIP-based Services in Ubiquitous Smart Homes",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Ryh-Yuh Tseng"],
-    "journal": "International Journal of Smart Home",
-    "volume": "IJSH Vol. 2, No.1",
-    "pages": "p1-p14",
-    "month": "Jan",
-    "year": 2008,
-    "indexers": []
-  },
-  {
-    "title": "Radio Resource Management for Multimedia QoS Support in Wireless Cellular Networks",
-    "authors": ["Huan Chen", "L. Huang", "Sunil Kumar", "C.-C. Jay Kuo"],
-    "journal": "Kluwer Academic Publishers",
-    "volume": "Oct. 2003",
-    "pages": "",
-    "month": "Oct",
-    "year": 2003,
-    "indexers": []
-  },
-  {
-    "title": "SOHO網路閘道器－實作與VoIP應用",
-    "authors": ["林宗男", "周立德", "陳煥", "趙涵捷", "賴文彬", "陳俊良"],
-    "journal": "知城出版社",
-    "volume": "2007.12",
-    "pages": "",
-    "month": "Dec",
-    "year": 2007,
-    "indexers": []
-  },
-  {
-    "title": "Worm Infection Locality Supports for Efficient Traceback Forensics",
-    "authors": ["Bo-Chao Cheng", "Guo-Tan Liao", "Wei-Jie Liau", "Huan Chen"],
-    "journal": "The 3rd International Workshop on Forensics for Future Generation Communication environments (F2GC-09)",
-    "volume": "Korea",
-    "pages": "",
-    "month": "",
-    "year": "",
-    "indexers": []
-  },
-  {
-    "title": "A Theoretical Security Model for Access Control and Security Assurance",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Ryh-Yuh Tseng"],
-    "journal": "Information Assurance and Security, IAS 2007. Third International Symposium",
-    "volume": "29-31 Aug. 2007",
-    "pages": "137 – 142",
-    "month": "Aug",
-    "year": 2007,
-    "indexers": []
-  },
-  {
-    "title": "A system-awareness decision classifier to automated MSN forensics",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Yin-Teshou Tsao Chu"],
-    "journal": "The International Society for Optical Engineering SPIE Symposium on Optics East 2007",
-    "volume": "Volume 6776",
-    "pages": "677600",
-    "month": "",
-    "year": "",
-    "indexers": []
-  },
-  {
-    "title": "On optimal contention-based access scheme in WLAN for next generation networks",
-    "authors": ["Huan Chen", "Bo-Chao Cheng", "Hsi-Hsun Yeh", "Chih-Chuan Cheng"],
-    "journal": "The International Society for Optical Engineering SPIE Symposium on Optics East 2007",
-    "volume": "Volume 6776",
-    "pages": "677605",
-    "month": "",
-    "year": "",
-    "indexers": []
-  },
-  {
-    "title": "Quality Assurance for Evidence Collection in Network Forensics",
-    "authors": ["Bo-Chao Cheng", "Huan Chen"],
-    "journal": "Information Security Applications, Workshop on Information Security Applications – WISA 2006",
-    "volume": "Aug. 28-30, 2006",
-    "pages": "",
-    "month": "Aug",
-    "year": 2006,
-    "indexers": []
-  },
-  {
-    "title": "Enhanced Radio Resource Management Schemes in the Downlink Wideband-CDMA Systems",
-    "authors": ["Kuo-Shing Huang", "Huan Chen", "Cheng-Song Wu", "Chun-Yi Lu"],
-    "journal": "2nd International Conference on Mobile Technology, Applications and Systems",
-    "volume": "15-17 Nov. 2005",
-    "pages": "",
-    "month": "Nov",
-    "year": 2005,
-    "indexers": []
-  },
-  {
-    "title": "Performance Analysis of Bandwidth Provisioning for AF+ VoIP Service Models over DiffServ-based MPLS Networks",
-    "authors": ["Hui-Kai Su", "Huan Chen", "Bo-Chao Cheng", "Cheng-Shong Wu"],
-    "journal": "SPECTS’06",
-    "volume": "Jul. 31 – Aug. 2, 2006",
-    "pages": "",
-    "month": "Jul",
-    "year": 2006,
-    "indexers": []
-  },
-  {
-    "title": "Design and Implement Probabilistic Packet Marking on T@T",
-    "authors": ["楊竣傑", "林敬凱", "梁以誠", "陳煥", "鄭伯炤"],
-    "journal": "第八屆離島資訊會議",
-    "volume": "05/2009",
-    "pages": "",
-    "month": "May",
-    "year": 2009,
-    "indexers": []
-  },
-  {
-    "title": "Supporting Intelligence Services Global Tracking System",
-    "authors": ["簡志軒", "陳煥", "鄭伯炤", "林冠吉", "吳孟澤"],
-    "journal": "National Symposium on Telecommunications (NST2008)",
-    "volume": "Dec. 5-6, 2008",
-    "pages": "",
-    "month": "Dec",
-    "year": 2008,
-    "indexers": []
-  },
-  {
-    "title": "A Fast Rerouting Scheme to Reduce Packet Loss during OLSR Converges",
-    "authors": ["Huan Chen", "Po-Kai Tseng", "Yu-Chang Kuo"],
-    "journal": "accepted WASN 2008",
-    "volume": "",
-    "pages": "",
-    "month": "",
-    "year": "",
-    "indexers": []
-  },
-  {
-    "title": "Optimal Duplication Strategy and Table-less Structured Overlay Routing for Ad Hoc Network",
-    "authors": ["Huan Chen", "Bo-Chao Cheng", "Po-Kai Tseng", "Chia-Hao Tseng"],
-    "journal": "accepted WASN 2008",
-    "volume": "",
-    "pages": "",
-    "month": "",
-    "year": "",
-    "indexers": []
-  },
-  {
-    "title": "ASP: A Novel Traceback against PPM Label Spoofing Attacks in MANET",
-    "authors": ["Bo-Chao Cheng", "Huan Chen", "Guo-Tan Liao", "Jyun-Jie Yang"],
-    "journal": "CISC 2008",
-    "volume": "No. 100, May 2008, NDHU",
-    "pages": "",
-    "month": "May",
-    "year": 2008,
-    "indexers": []
-  },
-  {
-        "title": "Design and Implementation of the RFID-Based U-Firewall (RFID)",
-        "authors": ["鄭伯炤", "陳煥", "廖國潭", "林ㄧ婷"],
-        "conference": "2008RFID科技論文研討會",
-        "details": "No. 41, 1 February, 2008, NTUT."
-      },
-      {
-        "title": "分散式感測網路下覆蓋延續性的感測器佈署 Sensor Deployment for Continuous Coverage in Distributed Sensor Networks",
-        "authors": ["簡勝璿", "陳 嘉鈞", "鄭伯炤", "陳 煥"],
-        "conference": "accepted WASN 2008"
-      },
-      {
-        "title": "Lifetime-Efficient Sensor Relocation Strategies for Mobile Sensor Networks",
-        "authors": ["林詩芸", "李孟修", "鄭伯炤", "陳煥"],
-        "conference": "2008全國電信研討會",
-        "details": "Dec. 5-6, 2008, 虎尾科技大學"
-      },
-      {
-        "title": "T-SecAODV: A Good IDS Response Protocol for MANET",
-        "authors": ["鄭伯炤", "蔡鎮宇", "陳煥", "范國寶", "廖國潭"],
-        "conference": "CISC 2007",
-        "details": "No. ISC07_N1642, June 2007, NCU."
-      },
-      {
-        "title": "Efficient Error-Correction Inference Engine by Using Learning HMM for ADL Recognition",
-        "authors": ["蔡奕安", "鄭伯炤", "陳煥"],
-        "conference": "2008數位生活科技研討會",
-        "details": "06/05~06/06"
-      },
-      {
-        "title": "Correlating Alerts with Vulnerability Information for an Intrusion Path Trace System",
-        "authors": ["陳俐如", "黃弘良", "鄭伯炤", "陳煥"],
-        "conference": "TANET 2008",
-        "details": "10 月20~22日, 高雄"
-      },
-      {
-        "title": "An Efficient Packet Marking Probabilistic Algorithm for Minimizing the Convergence Time in Hierarchical Wireless Sensor Networks",
-        "authors": ["陳煥", "李宜靜", "廖國潭", "鄭伯炤"],
-        "conference": "TANET 2007",
-        "details": "No. 359_303, pp.58, Oct. 22-25, 2007, NTU."
-      },
-      {
-        "title": "異質網路環境中行動感知網路服務之設計與實現(I)–子計畫五：異質網路環境中以SIP協定為基礎並支援行動感知之多媒體服務",
-        "authors": ["陳 煥"],
-        "conference": "95年國科會專題研究計畫報告",
-        "details": "中華民國96年10月，計畫編號NSC95-2219-E-194-007"
-      },
-      {
-        "title": "SIP-based VoIP-over-MPLS Architecture Design and System Development for Interactive and Secure Multimedia Services",
-        "authors": ["Chih-Wei Hsu", "Wen-Hsing Shen", "Huan Chen", "Ting-Chao Hou"],
-        "conference": "proceedings TANET",
-        "year": "2005"
-      },
-      {
-        "title": "漸進式結構化疊層網路之理論架構及效能優化研究與設計",
-        "authors": ["陳 煥"],
-        "conference": "96年國科會專題研究計畫報告",
-        "details": "中華民國97年10月，計畫編號NSC96-2221-E-194-034"
-      },
-      {
-        "title": "以具有服務品質的多重協定標籤交換寬頻網際網路促成次世代服務－子計畫四：互動式多媒體服務於具內容感知安全性之寬頻網際網路(1/2)",
-        "authors": ["陳 煥"],
-        "conference": "93年國科會專題研究計畫報告",
-        "details": "中華民國94年10月，計畫編號NSC93-2219-E-194-008"
-      },
-      {
-        "title": "Automated Trusted Negotiation Using a Smart Trust Agent",
-        "authors": ["陳煥", "林承助", "鄭伯炤"],
-        "conference": "2007 年第九屆「網際空間：資安、犯罪與法律社會」學術研討會",
-        "year": "2007年11月30日"
-      },
-      {
-        "title": "以具有服務品質的多重協定標籤交換寬頻網際網路促成次世代服務－子計畫四：互動式多媒體服務於具內容感知安全性之寬頻網際網路(2/2)",
-        "authors": ["陳 煥"],
-        "conference": "94年國科會專題研究計畫報告",
-        "details": "中華民國95年10月，計畫編號NSC94-2219-E-194-004"
-      },
-      {
-        "title": "基於馬可夫決策過程 (MDP)之無線通訊系統允入控制最佳化",
-        "authors": ["陳 煥"],
-        "conference": "92年國科會專題研究計畫報告",
-        "details": "中華民國93年8月，計畫編號NSC-92-2218-E-194-010"
-      }
+    {
+      "title": "Quality Assurance for Evidence Collection in Network Forensics",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen"
+      ],
+      "journal": "Lecture Notes in Computer Science (LNCS)",
+      "volume": "4298/2007",
+      "pages": "121-132",
+      "month": "May",
+      "year": 2007,
+      "indexers": [
+        "EI",
+        "ISTP"
+      ]
+    },
+    {
+      "title": "An Efficient Traceback Scheme in WSN",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Guo-Tan Liao"
+      ],
+      "journal": "Security and Communication Networks (Wiley)",
+      "volume": "Special Issue: Security in Wireless Sensor Networks Vol. 2, Issue 2",
+      "pages": "133-144",
+      "month": "Dec",
+      "year": 2008,
+      "indexers": []
+    },
+    {
+      "title": "A Novel Marking Probability Distribution Using Probability Propagation in Hierarchical WSN",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Guo-Tan Liao"
+      ],
+      "journal": "Lecture Notes in Computer Science (LNCS)",
+      "volume": "5487/2009",
+      "pages": "265-274",
+      "month": "April",
+      "year": 2009,
+      "indexers": [
+        "EI",
+        "ISTP"
+      ]
+    },
+    {
+      "title": "A Context-Aware Gateway for SIP-based Services in Ubiquitous Smart Homes",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Ryh-Yuh Tseng"
+      ],
+      "journal": "International Journal of Smart Home",
+      "volume": "IJSH Vol. 2, No.1",
+      "pages": "p1-p14",
+      "month": "Jan",
+      "year": 2008,
+      "indexers": []
+    },
+    {
+      "title": "Radio Resource Management for Multimedia QoS Support in Wireless Cellular Networks",
+      "authors": [
+        "Huan Chen",
+        "L. Huang",
+        "Sunil Kumar",
+        "C.-C. Jay Kuo"
+      ],
+      "journal": "Kluwer Academic Publishers",
+      "volume": "Oct. 2003",
+      "pages": "",
+      "month": "Oct",
+      "year": 2003,
+      "indexers": []
+    },
+    {
+      "title": "SOHO網路閘道器－實作與VoIP應用",
+      "authors": [
+        "林宗男",
+        "周立德",
+        "陳煥",
+        "趙涵捷",
+        "賴文彬",
+        "陳俊良"
+      ],
+      "journal": "知城出版社",
+      "volume": "2007.12",
+      "pages": "",
+      "month": "Dec",
+      "year": 2007,
+      "indexers": []
+    },
+    {
+      "title": "Worm Infection Locality Supports for Efficient Traceback Forensics",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Guo-Tan Liao",
+        "Wei-Jie Liau",
+        "Huan Chen"
+      ],
+      "journal": "The 3rd International Workshop on Forensics for Future Generation Communication environments (F2GC-09)",
+      "volume": "Korea",
+      "pages": "",
+      "month": "",
+      "year": "",
+      "indexers": []
+    },
+    {
+      "title": "A Theoretical Security Model for Access Control and Security Assurance",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Ryh-Yuh Tseng"
+      ],
+      "journal": "Information Assurance and Security, IAS 2007. Third International Symposium",
+      "volume": "29-31 Aug. 2007",
+      "pages": "137 – 142",
+      "month": "Aug",
+      "year": 2007,
+      "indexers": []
+    },
+    {
+      "title": "A system-awareness decision classifier to automated MSN forensics",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Yin-Teshou Tsao Chu"
+      ],
+      "journal": "The International Society for Optical Engineering SPIE Symposium on Optics East 2007",
+      "volume": "Volume 6776",
+      "pages": "677600",
+      "month": "",
+      "year": "",
+      "indexers": []
+    },
+    {
+      "title": "On optimal contention-based access scheme in WLAN for next generation networks",
+      "authors": [
+        "Huan Chen",
+        "Bo-Chao Cheng",
+        "Hsi-Hsun Yeh",
+        "Chih-Chuan Cheng"
+      ],
+      "journal": "The International Society for Optical Engineering SPIE Symposium on Optics East 2007",
+      "volume": "Volume 6776",
+      "pages": "677605",
+      "month": "",
+      "year": "",
+      "indexers": []
+    },
+    {
+      "title": "Quality Assurance for Evidence Collection in Network Forensics",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen"
+      ],
+      "journal": "Information Security Applications, Workshop on Information Security Applications – WISA 2006",
+      "volume": "Aug. 28-30, 2006",
+      "pages": "",
+      "month": "Aug",
+      "year": 2006,
+      "indexers": []
+    },
+    {
+      "title": "Enhanced Radio Resource Management Schemes in the Downlink Wideband-CDMA Systems",
+      "authors": [
+        "Kuo-Shing Huang",
+        "Huan Chen",
+        "Cheng-Song Wu",
+        "Chun-Yi Lu"
+      ],
+      "journal": "2nd International Conference on Mobile Technology, Applications and Systems",
+      "volume": "15-17 Nov. 2005",
+      "pages": "",
+      "month": "Nov",
+      "year": 2005,
+      "indexers": []
+    },
+    {
+      "title": "Performance Analysis of Bandwidth Provisioning for AF+ VoIP Service Models over DiffServ-based MPLS Networks",
+      "authors": [
+        "Hui-Kai Su",
+        "Huan Chen",
+        "Bo-Chao Cheng",
+        "Cheng-Shong Wu"
+      ],
+      "journal": "SPECTS’06",
+      "volume": "Jul. 31 – Aug. 2, 2006",
+      "pages": "",
+      "month": "Jul",
+      "year": 2006,
+      "indexers": []
+    },
+    {
+      "title": "Design and Implement Probabilistic Packet Marking on T@T",
+      "authors": [
+        "楊竣傑",
+        "林敬凱",
+        "梁以誠",
+        "陳煥",
+        "鄭伯炤"
+      ],
+      "journal": "第八屆離島資訊會議",
+      "volume": "05/2009",
+      "pages": "",
+      "month": "May",
+      "year": 2009,
+      "indexers": []
+    },
+    {
+      "title": "Supporting Intelligence Services Global Tracking System",
+      "authors": [
+        "簡志軒",
+        "陳煥",
+        "鄭伯炤",
+        "林冠吉",
+        "吳孟澤"
+      ],
+      "journal": "National Symposium on Telecommunications (NST2008)",
+      "volume": "Dec. 5-6, 2008",
+      "pages": "",
+      "month": "Dec",
+      "year": 2008,
+      "indexers": []
+    },
+    {
+      "title": "A Fast Rerouting Scheme to Reduce Packet Loss during OLSR Converges",
+      "authors": [
+        "Huan Chen",
+        "Po-Kai Tseng",
+        "Yu-Chang Kuo"
+      ],
+      "journal": "accepted WASN 2008",
+      "volume": "",
+      "pages": "",
+      "month": "",
+      "year": "",
+      "indexers": []
+    },
+    {
+      "title": "Optimal Duplication Strategy and Table-less Structured Overlay Routing for Ad Hoc Network",
+      "authors": [
+        "Huan Chen",
+        "Bo-Chao Cheng",
+        "Po-Kai Tseng",
+        "Chia-Hao Tseng"
+      ],
+      "journal": "accepted WASN 2008",
+      "volume": "",
+      "pages": "",
+      "month": "",
+      "year": "",
+      "indexers": []
+    },
+    {
+      "title": "ASP: A Novel Traceback against PPM Label Spoofing Attacks in MANET",
+      "authors": [
+        "Bo-Chao Cheng",
+        "Huan Chen",
+        "Guo-Tan Liao",
+        "Jyun-Jie Yang"
+      ],
+      "journal": "CISC 2008",
+      "volume": "No. 100, May 2008, NDHU",
+      "pages": "",
+      "month": "May",
+      "year": 2008,
+      "indexers": []
+    },
+    {
+      "title": "Design and Implementation of the RFID-Based U-Firewall (RFID)",
+      "authors": [
+        "鄭伯炤",
+        "陳煥",
+        "廖國潭",
+        "林ㄧ婷"
+      ],
+      "conference": "2008RFID科技論文研討會",
+      "details": "No. 41, 1 February, 2008, NTUT."
+    },
+    {
+      "title": "分散式感測網路下覆蓋延續性的感測器佈署 Sensor Deployment for Continuous Coverage in Distributed Sensor Networks",
+      "authors": [
+        "簡勝璿",
+        "陳嘉鈞",
+        "鄭伯炤",
+        "陳 煥"
+      ],
+      "conference": "accepted WASN 2008"
+    },
+    {
+      "title": "Lifetime-Efficient Sensor Relocation Strategies for Mobile Sensor Networks",
+      "authors": [
+        "林詩芸",
+        "李孟修",
+        "鄭伯炤",
+        "陳煥"
+      ],
+      "conference": "2008全國電信研討會",
+      "details": "Dec. 5-6, 2008, 虎尾科技大學"
+    },
+    {
+      "title": "T-SecAODV: A Good IDS Response Protocol for MANET",
+      "authors": [
+        "鄭伯炤",
+        "蔡鎮宇",
+        "陳煥",
+        "范國寶",
+        "廖國潭"
+      ],
+      "conference": "CISC 2007",
+      "details": "No. ISC07_N1642, June 2007, NCU."
+    },
+    {
+      "title": "Efficient Error-Correction Inference Engine by Using Learning HMM for ADL Recognition",
+      "authors": [
+        "蔡奕安",
+        "鄭伯炤",
+        "陳煥"
+      ],
+      "conference": "2008數位生活科技研討會",
+      "details": "06/05~06/06"
+    },
+    {
+      "title": "Correlating Alerts with Vulnerability Information for an Intrusion Path Trace System",
+      "authors": [
+        "陳俐如",
+        "黃弘良",
+        "鄭伯炤",
+        "陳煥"
+      ],
+      "conference": "TANET 2008",
+      "details": "10 月20~22日, 高雄"
+    },
+    {
+      "title": "An Efficient Packet Marking Probabilistic Algorithm for Minimizing the Convergence Time in Hierarchical Wireless Sensor Networks",
+      "authors": [
+        "陳煥",
+        "李宜靜",
+        "廖國潭",
+        "鄭伯炤"
+      ],
+      "conference": "TANET 2007",
+      "details": "No. 359_303, pp.58, Oct. 22-25, 2007, NTU."
+    },
+    {
+      "title": "異質網路環境中行動感知網路服務之設計與實現(I)–子計畫五：異質網路環境中以SIP協定為基礎並支援行動感知之多媒體服務",
+      "authors": [
+        "陳 煥"
+      ],
+      "conference": "95年國科會專題研究計畫報告",
+      "details": "中華民國96年10月，計畫編號NSC95-2219-E-194-007"
+    },
+    {
+      "title": "SIP-based VoIP-over-MPLS Architecture Design and System Development for Interactive and Secure Multimedia Services",
+      "authors": [
+        "Chih-Wei Hsu",
+        "Wen-Hsing Shen",
+        "Huan Chen",
+        "Ting-Chao Hou"
+      ],
+      "conference": "proceedings TANET",
+      "year": "2005"
+    },
+    {
+      "title": "漸進式結構化疊層網路之理論架構及效能優化研究與設計",
+      "authors": [
+        "陳 煥"
+      ],
+      "conference": "96年國科會專題研究計畫報告",
+      "details": "中華民國97年10月，計畫編號NSC96-2221-E-194-034"
+    },
+    {
+      "title": "以具有服務品質的多重協定標籤交換寬頻網際網路促成次世代服務－子計畫四：互動式多媒體服務於具內容感知安全性之寬頻網際網路(1/2)",
+      "authors": [
+        "陳 煥"
+      ],
+      "conference": "93年國科會專題研究計畫報告",
+      "details": "中華民國94年10月，計畫編號NSC93-2219-E-194-008"
+    },
+    {
+      "title": "Automated Trusted Negotiation Using a Smart Trust Agent",
+      "authors": [
+        "陳煥",
+        "林承助",
+        "鄭伯炤"
+      ],
+      "conference": "2007 年第九屆「網際空間：資安、犯罪與法律社會」學術研討會",
+      "year": "2007年11月30日"
+    },
+    {
+      "title": "以具有服務品質的多重協定標籤交換寬頻網際網路促成次世代服務－子計畫四：互動式多媒體服務於具內容感知安全性之寬頻網際網路(2/2)",
+      "authors": [
+        "陳 煥"
+      ],
+      "conference": "94年國科會專題研究計畫報告",
+      "details": "中華民國95年10月，計畫編號NSC94-2219-E-194-004"
+    },
+    {
+      "title": "基於馬可夫決策過程 (MDP)之無線通訊系統允入控制最佳化",
+      "authors": [
+        "陳 煥"
+      ],
+      "conference": "92年國科會專題研究計畫報告",
+      "details": "中華民國93年8月，計畫編號NSC-92-2218-E-194-010"
+    }
   ]
 }
-  

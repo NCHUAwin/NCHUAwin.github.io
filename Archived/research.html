@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWIN_web</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/research.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>AWIN Lab research area</h1>
-    </header>
-    <section id="research">
-      <div class="research-container">
-        <div
-          class="side-paper"
-          id="prev-research"
-          onclick="prevResearch()"
-        ></div>
-        <div class="paper" id="research-content"></div>
-        <div
-          class="side-paper"
-          id="next-research"
-          onclick="nextResearch()"
-        ></div>
-      </div>
-    </section>
-    <nav>
-      <a href="../index.html">🏠 首頁</a>
-      <a href="research.html">🔬 研究領域</a>
-      <a href="professor.html">🎓 指導教授</a>
-      <a href="team.html">👥 團隊成員</a>
-      <a href="contact.html">📩 聯絡我們</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWIN_web</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/research.css" />
+</head>
 
-    <script>
-      let researchIndex = 0;
-      const researchTopics = [
-        "前瞻無線網路最佳化技術",
-        "智慧電表資訊安全與滲透防護",
-        "智慧無人載具深度學習技術",
-        "智慧物聯網產業應用",
-      ];
-      const researchContent = document.getElementById("research-content");
+<body>
+  <header>
+    <h1>AWIN Lab research area</h1>
+  </header>
+  <section id="research">
+    <div class="research-container">
+      <div class="side-paper" id="prev-research" onclick="prevResearch()"></div>
+      <div class="paper" id="research-content"></div>
+      <div class="side-paper" id="next-research" onclick="nextResearch()"></div>
+    </div>
+  </section>
+  <nav>
+    <a href="../index.html">🏠 首頁</a>
+    <a href="research.html">🔬 研究領域</a>
+    <a href="professor.html">🎓 指導教授</a>
+    <a href="team.html">👥 團隊成員</a>
+    <a href="contact.html">📩 聯絡我們</a>
+  </nav>
 
-      const researchDescriptions = [
-        "本研究主要使用強化式學習與啟發式演算法來探討有關無線感測網路(Wireless Sensor Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。目前研究範圍主要包含了以下幾個領域：<br>(1)存取控制 (Admission Control)<br>(2)壽命最佳化 (Lifetime Optimization)<br>(3)路由策略建構 (Routing strategy construction)<br>(4)最佳化排程 (Schedule Optimization)<br><img src='../photo/team/陳信宇.png' alt='陳信宇' class='circle-img' title='陳信宇'><img src='../photo/team/陳昱丞.png' alt='陳昱丞' class='circle-img' title='陳昱丞'><img src='../photo/team/陳珮禎.png' alt='陳珮禎' class='circle-img' title='陳珮禎'><img src='../photo/team/呂淳昇.png' alt='呂淳昇' class='circle-img' title='呂淳昇'>",
-        "在智慧家庭與智能生活的應用範圍內，發展綠化節能的應用服務，在某種比較層面上使生活方式具智慧化控管功能，如<br>(1)智慧家庭內的電器狀態監控<br>(2)智慧電網系統架構內的先進讀表基礎建設(Advanced Metering Infrastructure，AMI)<br>(3)電力需求面管理(Demand-Side Management，DSM)<br>(4)需量反應計畫(Demand Response Program，DRP) 相關研究議題。<br><img src='../photo/team/張黛妤.png' alt='張黛妤' class='circle-img' title='張黛妤'><img src='../photo/team/許心耀.png' alt='許心耀' class='circle-img' title='許心耀'>",
-        "本研究基於深度學習與啟發式演算法，結合智慧無人載具發展相關創新研究以達科學與技術的卓越性。目前我們著重於以下研究領域：<br>(1)無人載具上搭載LiDAR及光學圖像進行三維影像重建<br>(2)結合深度學習之物件追蹤演算法進行違規停車交通科技執法<br><img src='../photo/team/陳宥云.png' alt='陳宥云' class='circle-img' title='陳宥云'><img src='../photo/team/羅泓喆.png' alt='羅泓喆' class='circle-img' title='羅泓喆'>",
-        "對於工業4.0、智慧工廠、智慧生醫等方面進行研究與開發。 目前主要對於探討心電圖資訊因無線傳輸過程中面臨的雜訊干擾、封包遺失、安全性及系統設備舒適度與方便性著手進行開發，期能達成長時傳輸(long‐time)、可靠傳輸(reliable)、隱私維護(privacy preserving)的網路通訊技術目標，同時適合個人型之隨身心電資訊(ECG)監控照護系統與服務，加強與醫學界互動以增加產品技術研發之實用性。<br><img src='../photo/team/羅泓喆.png' alt='羅泓喆' class='circle-img' title='羅泓喆'><img src='../photo/team/陳昱丞.png' alt='陳昱丞' class='circle-img' title='陳昱丞'><img src='../photo/team/陳宥云.png' alt='陳宥云' class='circle-img' title='陳宥云'>",
-      ];
+  <script>
+    let researchIndex = 0;
+    const researchTopics = [
+      "前瞻無線網路最佳化技術",
+      "智慧電表資訊安全與滲透防護",
+      "智慧無人載具深度學習技術",
+      "智慧物聯網產業應用",
+    ];
+    const researchContent = document.getElementById("research-content");
 
-      function updateResearch() {
-        researchContent.innerHTML = `<strong>${researchTopics[researchIndex]}</strong><br>${researchDescriptions[researchIndex]}`;
+    const researchDescriptions = [
+      "本研究主要使用強化式學習與啟發式演算法來探討有關無線感測網路(Wireless Sensor Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。目前研究範圍主要包含了以下幾個領域：<br>(1)存取控制 (Admission Control)<br>(2)壽命最佳化 (Lifetime Optimization)<br>(3)路由策略建構 (Routing strategy construction)<br>(4)最佳化排程 (Schedule Optimization)<br><img src='../photo/team/陳信宇.png' alt='陳信宇' class='circle-img' title='陳信宇'><img src='../photo/team/陳昱丞.png' alt='陳昱丞' class='circle-img' title='陳昱丞'><img src='../photo/team/陳珮禎.png' alt='陳珮禎' class='circle-img' title='陳珮禎'><img src='../photo/team/呂淳昇.png' alt='呂淳昇' class='circle-img' title='呂淳昇'>",
+      "在智慧家庭與智能生活的應用範圍內，發展綠化節能的應用服務，在某種比較層面上使生活方式具智慧化控管功能，如<br>(1)智慧家庭內的電器狀態監控<br>(2)智慧電網系統架構內的先進讀表基礎建設(Advanced Metering Infrastructure，AMI)<br>(3)電力需求面管理(Demand-Side Management，DSM)<br>(4)需量反應計畫(Demand Response Program，DRP) 相關研究議題。<br><img src='../photo/team/張黛妤.png' alt='張黛妤' class='circle-img' title='張黛妤'><img src='../photo/team/許心耀.png' alt='許心耀' class='circle-img' title='許心耀'>",
+      "本研究基於深度學習與啟發式演算法，結合智慧無人載具發展相關創新研究以達科學與技術的卓越性。目前我們著重於以下研究領域：<br>(1)無人載具上搭載LiDAR及光學圖像進行三維影像重建<br>(2)結合深度學習之物件追蹤演算法進行違規停車交通科技執法<br><img src='../photo/team/陳宥云.png' alt='陳宥云' class='circle-img' title='陳宥云'><img src='../photo/team/羅泓喆.png' alt='羅泓喆' class='circle-img' title='羅泓喆'>",
+      "對於工業4.0、智慧工廠、智慧生醫等方面進行研究與開發。 目前主要對於探討心電圖資訊因無線傳輸過程中面臨的雜訊干擾、封包遺失、安全性及系統設備舒適度與方便性著手進行開發，期能達成長時傳輸(long‐time)、可靠傳輸(reliable)、隱私維護(privacy preserving)的網路通訊技術目標，同時適合個人型之隨身心電資訊(ECG)監控照護系統與服務，加強與醫學界互動以增加產品技術研發之實用性。<br><img src='../photo/team/羅泓喆.png' alt='羅泓喆' class='circle-img' title='羅泓喆'><img src='../photo/team/陳昱丞.png' alt='陳昱丞' class='circle-img' title='陳昱丞'><img src='../photo/team/陳宥云.png' alt='陳宥云' class='circle-img' title='陳宥云'>",
+    ];
 
-        // 計算前一個與下一個索引
-        let prevIndex =
+    function updateResearch() {
+      researchContent.innerHTML = `<strong>${researchTopics[researchIndex]}</strong><br>${researchDescriptions[researchIndex]}`;
+
+      // 計算前一個與下一個索引
+      let prevIndex =
+        (researchIndex - 1 + researchTopics.length) % researchTopics.length;
+      let nextIndex = (researchIndex + 1) % researchTopics.length;
+
+      // 更新左側（前一個）
+      document.getElementById(
+        "prev-research"
+      ).innerHTML = `<strong>${researchTopics[prevIndex]}</strong><br>${researchDescriptions[prevIndex]}`;
+
+      // 更新右側（下一個）
+      document.getElementById(
+        "next-research"
+      ).innerHTML = `<strong>${researchTopics[nextIndex]}</strong><br>${researchDescriptions[nextIndex]}`;
+    }
+
+    function prevResearch() {
+      researchContent.classList.add("fade-out-left");
+      setTimeout(() => {
+        researchIndex =
           (researchIndex - 1 + researchTopics.length) % researchTopics.length;
-        let nextIndex = (researchIndex + 1) % researchTopics.length;
+        updateResearch();
+        researchContent.classList.remove("fade-out-left");
+        researchContent.classList.add("fade-in");
+        setTimeout(() => researchContent.classList.remove("fade-in"), 500);
+      }, 500);
+    }
 
-        // 更新左側（前一個）
-        document.getElementById(
-          "prev-research"
-        ).innerHTML = `<strong>${researchTopics[prevIndex]}</strong><br>${researchDescriptions[prevIndex]}`;
+    function nextResearch() {
+      researchContent.classList.add("fade-out-right");
+      setTimeout(() => {
+        researchIndex = (researchIndex + 1) % researchTopics.length;
+        updateResearch();
+        researchContent.classList.remove("fade-out-right");
+        researchContent.classList.add("fade-in");
+        setTimeout(() => researchContent.classList.remove("fade-in"), 500);
+      }, 500);
+    }
 
-        // 更新右側（下一個）
-        document.getElementById(
-          "next-research"
-        ).innerHTML = `<strong>${researchTopics[nextIndex]}</strong><br>${researchDescriptions[nextIndex]}`;
-      }
+    updateResearch();
+  </script>
+</body>
 
-      function prevResearch() {
-        researchContent.classList.add("fade-out-left");
-        setTimeout(() => {
-          researchIndex =
-            (researchIndex - 1 + researchTopics.length) % researchTopics.length;
-          updateResearch();
-          researchContent.classList.remove("fade-out-left");
-          researchContent.classList.add("fade-in");
-          setTimeout(() => researchContent.classList.remove("fade-in"), 500);
-        }, 500);
-      }
-
-      function nextResearch() {
-        researchContent.classList.add("fade-out-right");
-        setTimeout(() => {
-          researchIndex = (researchIndex + 1) % researchTopics.length;
-          updateResearch();
-          researchContent.classList.remove("fade-out-right");
-          researchContent.classList.add("fade-in");
-          setTimeout(() => researchContent.classList.remove("fade-in"), 500);
-        }, 500);
-      }
-
-      updateResearch();
-    </script>
-  </body>
 </html>

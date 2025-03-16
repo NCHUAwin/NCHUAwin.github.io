@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWIN_web</title>
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/professor.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <h1>Our Professor, Huan Chen</h1>
+        <h1>Our Professor, Huan Chen</h1>
     </header>
     <section id="research">
-      <div class="research-container">
-        <div
-          class="side-paper"
-          id="prev-research"
-          onclick="prevResearch()"
-        ></div>
-        <div class="paper" id="research-content"></div>
-        <div
-          class="side-paper"
-          id="next-research"
-          onclick="nextResearch()"
-        ></div>
-        <div class="profile-container">
-          <img src="../photo/professor.png" alt="Huan Chen" class="profile-img" />
+        <div class="research-container">
+            <div class="side-paper" id="prev-research" onclick="prevResearch()"></div>
+            <div class="paper" id="research-content"></div>
+            <div class="side-paper" id="next-research" onclick="nextResearch()"></div>
+            <div class="profile-container">
+                <img src="../photo/professor.png" alt="Huan Chen" class="profile-img" />
+            </div>
         </div>
-      </div>
         <button id="prev-page-btn" onclick="nextResearch()">
             Prev Page
 
-        <button id="next-page-btn" onclick="nextResearch()">
-            Next Page
-      </button>
+            <button id="next-page-btn" onclick="nextResearch()">
+                Next Page
+            </button>
     </section>
     <nav>
-      <a href="../index.html">🏠 首頁</a>
-      <a href="research.html">🔬 研究領域</a>
-      <a href="professor.html">🎓 指導教授</a>
-      <a href="team.html">👥 團隊成員</a>
-      <a href="contact.html">📩 聯絡我們</a>
+        <a href="../index.html">🏠 首頁</a>
+        <a href="research.html">🔬 研究領域</a>
+        <a href="professor.html">🎓 指導教授</a>
+        <a href="team.html">👥 團隊成員</a>
+        <a href="contact.html">📩 聯絡我們</a>
     </nav>
 
     <script>
-      let researchIndex = 0;
-      const researchTopics = [
-        "Huan Chen (陳 煥)",
-        "主要學歷",
-        "現職及與專長相關之經歷",
-        "Contact",
-        "Papers",
-      ];
-      const researchContent = document.getElementById("research-content");
+        let researchIndex = 0;
+        const researchTopics = [
+            "Huan Chen (陳 煥)",
+            "主要學歷",
+            "現職及與專長相關之經歷",
+            "Contact",
+            "Papers",
+        ];
+        const researchContent = document.getElementById("research-content");
 
-      const researchDescriptions = [
-        "Huan Chen received his B.S. and M.S. (Electrical Engineering) degrees from the National Tsing HuaUniversity, Hsing Chu (Taiwan) in 1993 and 1995, respectively. He earned his Ph.D. (Electrical Engineering) degree fromthe University of Southern California, Los Angeles (USA)in 2002. He is an member of IEEE since 1999 and he is the co-author of the book”Radio Resource Management for Multimedia QoS Support in Wireless Cellular Networks“,Kluwer Academic Publishers, Oct. 2003 (ISBN: 1-4020-7623-1). In additional to his academic career experiences, he also worked forXitec Inc., Summitec Co. and Intervideo Inc. as a summer intern and software engineer from June 1997 to January 2001. Since Feb. 2002 to Feb. 2012, he was faculty members of the Electrical Engineering Department at National Chung Cheng University (Taiwan). He is currently an associate professor with the Department of Computer Science and Engineering, National Chung HsingUniversity (Taiwan). His principle research interests include Wireless Networks, Body Area Networks, Wireless Sensor Networks, Embedded Systems, Network Security, Android and Cloud Applications.",
-        `
+        const researchDescriptions = [
+            "Huan Chen received his B.S. and M.S. (Electrical Engineering) degrees from the National Tsing HuaUniversity, Hsing Chu (Taiwan) in 1993 and 1995, respectively. He earned his Ph.D. (Electrical Engineering) degree fromthe University of Southern California, Los Angeles (USA)in 2002. He is an member of IEEE since 1999 and he is the co-author of the book”Radio Resource Management for Multimedia QoS Support in Wireless Cellular Networks“,Kluwer Academic Publishers, Oct. 2003 (ISBN: 1-4020-7623-1). In additional to his academic career experiences, he also worked forXitec Inc., Summitec Co. and Intervideo Inc. as a summer intern and software engineer from June 1997 to January 2001. Since Feb. 2002 to Feb. 2012, he was faculty members of the Electrical Engineering Department at National Chung Cheng University (Taiwan). He is currently an associate professor with the Department of Computer Science and Engineering, National Chung HsingUniversity (Taiwan). His principle research interests include Wireless Networks, Body Area Networks, Wireless Sensor Networks, Embedded Systems, Network Security, Android and Cloud Applications.",
+            `
             <table>
                 <tr>
                     <th>畢業學校</th>
@@ -93,7 +86,7 @@
                 </tr>
             </table>
             `,
-        `
+            `
             <table>
                 <tr>
                     <th>服務機關</th>
@@ -175,7 +168,7 @@
                 </tr>
             </table>
             `,
-        `
+            `
             <table>
                 <tr>
                     <th>服務單位</th>
@@ -193,7 +186,7 @@
                 </tr>
             </table>
             `,
-        `
+            `
             <table>
                 <tr>
                     <th>論文</th>
@@ -298,51 +291,52 @@
 
             </table>
             `,
-      ];
+        ];
 
-      function updateResearch() {
-        researchContent.innerHTML = `<strong>${researchTopics[researchIndex]}</strong><br>${researchDescriptions[researchIndex]}`;
+        function updateResearch() {
+            researchContent.innerHTML = `<strong>${researchTopics[researchIndex]}</strong><br>${researchDescriptions[researchIndex]}`;
 
-        // 計算前一個與下一個索引
-        let prevIndex =
-          (researchIndex - 1 + researchTopics.length) % researchTopics.length;
-        let nextIndex = (researchIndex + 1) % researchTopics.length;
+            // 計算前一個與下一個索引
+            let prevIndex =
+                (researchIndex - 1 + researchTopics.length) % researchTopics.length;
+            let nextIndex = (researchIndex + 1) % researchTopics.length;
 
-        // 更新左側（前一個）
-        document.getElementById(
-          "prev-research"
-        ).innerHTML = `<strong>${researchTopics[prevIndex]}</strong><br>${researchDescriptions[prevIndex]}`;
+            // 更新左側（前一個）
+            document.getElementById(
+                "prev-research"
+            ).innerHTML = `<strong>${researchTopics[prevIndex]}</strong><br>${researchDescriptions[prevIndex]}`;
 
-        // 更新右側（下一個）
-        document.getElementById(
-          "next-research"
-        ).innerHTML = `<strong>${researchTopics[nextIndex]}</strong><br>${researchDescriptions[nextIndex]}`;
-      }
+            // 更新右側（下一個）
+            document.getElementById(
+                "next-research"
+            ).innerHTML = `<strong>${researchTopics[nextIndex]}</strong><br>${researchDescriptions[nextIndex]}`;
+        }
 
-      function prevResearch() {
-        researchContent.classList.add("fade-out-left");
-        setTimeout(() => {
-          researchIndex =
-            (researchIndex - 1 + researchTopics.length) % researchTopics.length;
-          updateResearch();
-          researchContent.classList.remove("fade-out-left");
-          researchContent.classList.add("fade-in");
-          setTimeout(() => researchContent.classList.remove("fade-in"), 500);
-        }, 500);
-      }
+        function prevResearch() {
+            researchContent.classList.add("fade-out-left");
+            setTimeout(() => {
+                researchIndex =
+                    (researchIndex - 1 + researchTopics.length) % researchTopics.length;
+                updateResearch();
+                researchContent.classList.remove("fade-out-left");
+                researchContent.classList.add("fade-in");
+                setTimeout(() => researchContent.classList.remove("fade-in"), 500);
+            }, 500);
+        }
 
-      function nextResearch() {
-        researchContent.classList.add("fade-out-right");
-        setTimeout(() => {
-          researchIndex = (researchIndex + 1) % researchTopics.length;
-          updateResearch();
-          researchContent.classList.remove("fade-out-right");
-          researchContent.classList.add("fade-in");
-          setTimeout(() => researchContent.classList.remove("fade-in"), 500);
-        }, 500);
-      }
+        function nextResearch() {
+            researchContent.classList.add("fade-out-right");
+            setTimeout(() => {
+                researchIndex = (researchIndex + 1) % researchTopics.length;
+                updateResearch();
+                researchContent.classList.remove("fade-out-right");
+                researchContent.classList.add("fade-in");
+                setTimeout(() => researchContent.classList.remove("fade-in"), 500);
+            }, 500);
+        }
 
-      updateResearch();
+        updateResearch();
     </script>
-  </body>
+</body>
+
 </html>

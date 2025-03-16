@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Iterate over the publications and create HTML elements
       publications.forEach((entry, index) => {
         const journalDiv = document.createElement("div");
-        journalDiv.classList.add("resume-item", "pb-0", "col-12", "col-md-6");  // Keep resume-item and pb-0, plus col for grid
+        journalDiv.classList.add("resume-item", "pb-0", "col-12", "col-md-6","p-3");  // Keep resume-item and pb-0, plus col for grid
 
         // Ensure 'authors' and 'indexers' are arrays before calling .join()
         const authors = Array.isArray(entry.authors) ? entry.authors.join(", ") : "No authors listed";
