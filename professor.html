@@ -25,9 +25,12 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
+    <!-- Bootstrap CSS (ensure this is included in your head section) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Bundle JS (includes Popper.js for Bootstrap components like dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/professor.css" rel="stylesheet" />
 
     <!-- =======================================================
   * Template Name: iPortfolio
@@ -40,72 +43,57 @@
 
 <body class="index-page">
     <header id="header" class="header dark-background d-flex flex-column">
-        <i class="header-toggle d-xl-none bi bi-list"></i>
-
-        <div class="profile-img">
-            <img src="assets/img/lab/awin.png" alt="" class="img-fluid rounded-circle" />
-        </div>
-
-        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">AWIN Lab</h1>
-        </a>
-
-        <div class="social-links text-center">
+        <!-- <div class="social-links text-center">
             <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
+        </div> -->
 
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li>
-                    <a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a>
-                </li>
-                <li class="dropdown"><a href=""><i class="bi bi-person-lines-fill navicon"></i>
-                        <span>Professor</span>
-                        <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li>
-                            <a href="professor.html#professor"><i class="bi bi-person-vcard-fill navicon"></i>
-                                Profile</a>
-                        </li>
-                        <li>
-                            <a href="professor.html#lecture"><i class="bi bi-book navicon"></i> Lecture</a>
-                        </li>
-                        <li>
-                            <a href="professor.html#publication"><i class="bi bi-journal-bookmark-fill navicon"></i>
-                                Publications</a>
-                        </li>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container px-3">
+                <!-- Logo on the left -->
+                <a class="navbar-brand" href="professor.html">
+                    <img src="assets/img/lab/awin.png" class="img-fluid rounded-circle" width="50" height="50"
+                        alt="AWIN Lab Logo">
+                </a>
 
+                <!-- Button to toggle navbar in small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links on the right -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="professor.html#professor">
+                                <i class="bi bi-person-vcard-fill"></i> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="professor.html#lecture">
+                                <i class="bi bi-book"></i> Lecture
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="professor.html#publication">
+                                <i class="bi bi-journal-bookmark-fill"></i> Publications
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi bi-person-raised-hand"></i> AWIN Lab Website
+                            </a>
+                        </li>
                     </ul>
-                </li>
-
-                <li class="dropdown"><a href="index.html#labinfo"><i class="bi bi-menu-button navicon"></i>
-                        <span>Labatory</span>
-                        <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li>
-                            <a href="index.html#labinfo"><i class="bi bi-diagram-3 navicon"></i> Research interests</a>
-                        </li>
-                        <li>
-                            <a href="index.html#member"><i class="bi bi-person-bounding-box navicon"></i> Members</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li>
-                    <a href="index.html#joinus"><i class="bi bi-person-raised-hand navicon"></i> Join us</a>
-                </li>
-                <li>
-                    <a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
+
+
     </header>
 
     <!-- Main Content -->
@@ -425,7 +413,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/professor.js"></script>
 </body>
 
 </html>
