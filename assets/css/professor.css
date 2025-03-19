@@ -96,6 +96,28 @@ h6 {
   font-size: 1.2rem; /* Adjust the font size as needed */
 }
 
+.navbar {
+  background: linear-gradient(rgba(137, 179, 233, 1), rgba(137, 179, 233, 0.7)),
+    var(--accent-color);
+  color: #040b14;
+}
+.navbar a {
+  color: #040b14; /* Override link color */
+}
+
+.navbar a:hover {
+  color: #fafafa; /* Optional: Adjust hover color */
+}
+.navbar-brand img {
+  max-height: 50px; /* Adjust this to resize */
+  width: auto; /* Maintain original aspect ratio */
+  background-color: rgb(207, 222, 224);
+  border-radius: 50%; /* Keeps the rounded shape */
+}
+
+main {
+  padding-top: 50px; /* Adjust based on navbar height */
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/

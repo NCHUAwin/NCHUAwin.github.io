@@ -1329,7 +1329,7 @@ th {
 }
 
 .card-img {
-  border-radius: 25px;
+  border-radius: 50px;
   height: 100px;
   max-width: 100%;
   height: auto;
@@ -1342,4 +1342,20 @@ th {
   overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
   line-height: 1.4; /* Adjust line-height if needed for better spacing */
   color: #000;
+}
+
+.person-icon {
+  font-size: 5vw; /* Adjusts size based on viewport width */
+}
+
+@media (max-width: 768px) {
+  .person-icon {
+    font-size: 8vw; /* Increase size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .person-icon {
+    font-size: 10vw; /* Even larger for very small screens */
+  }
 }

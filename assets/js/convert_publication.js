@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  fetch("publications.json")
+  fetch("assets/data/publications.json")
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("journal-container");

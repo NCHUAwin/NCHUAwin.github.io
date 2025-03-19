@@ -35,7 +35,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "陳珮禎",
@@ -46,7 +48,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "張黛妤",
@@ -57,7 +61,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "羅泓喆",
@@ -68,7 +74,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "許心耀",
@@ -79,7 +87,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "劉冠伯",
@@ -90,7 +100,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "吳偉政",
@@ -101,7 +113,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "吳楚熙",
@@ -112,7 +126,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "簡紹鈞",
@@ -123,7 +139,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "蔡詳羿",
@@ -134,7 +152,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "陳信宇",
@@ -145,229 +165,310 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       }
     ],
     "alumni": [
       {
-        "name": "87",
+        "name": "楊心蝶",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/87.jpg",
+        "grade": "107",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "cc",
+        "name": "范均泓",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/cc.jpg",
+        "grade": "107",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "cody",
+        "name": "葉宸妤",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/cody.jpg",
+        "grade": "107",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "frank",
+        "name": "黃威",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/frank.jpg",
+        "grade": "107",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "Harvey",
+        "name": "林佑儒",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/Harvey.jpg",
+        "grade": "108",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "jar",
+        "name": "洪瑋聯",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/jar.jpg",
+        "grade": "109",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "jun",
+        "name": "洪祥恩",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/jun.jpg",
+        "grade": "109",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "kelly",
+        "name": "王越先",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/kelly.jpg",
+        "grade": "109",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "lion",
+        "name": "羅郁婷",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/lion.jpg",
+        "grade": "109",
+        "img": "assets/img/member/alumni/羅郁婷.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "shan",
+        "name": "陳致均",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/shan.jpg",
+        "grade": "109",
+        "img": "assets/img/member/alumni/陳致均.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "shian",
-        "title": "",
-        "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/shian.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "William",
-        "title": "",
-        "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/William.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "wu",
-        "title": "",
-        "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/wu.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "yue",
-        "title": "",
-        "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/yue.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "yuzu",
-        "title": "",
-        "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/yuzu.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "劉承諺",
         "title": "",
         "degree":"mater",
-        "grade": "",
+        "grade": "109",
         "img": "assets/img/member/alumni/劉承諺.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "吳允呈",
+        "name": "王冠淇",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/吳允呈.jpg",
+        "grade": "109",
+        "img": "assets/img/member/alumni/王冠淇.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "廖品豪",
+        "name": "胡勝勛",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/廖品豪.jpg",
+        "grade": "109",
+        "img": "assets/img/member/alumni/胡勝勛.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
-        "name": "林璟翔",
+        "name": "許佩慈",
         "title": "",
         "degree":"mater",
-        "grade": "",
-        "img": "assets/img/member/alumni/林璟翔.jpg",
+        "grade": "109",
+        "img": "assets/img/member/alumni/許佩慈.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "陳煜",
         "title": "",
         "degree":"mater",
-        "grade": "",
+        "grade": "109",
         "img": "assets/img/member/alumni/陳煜.jpg",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "黃楚耘",
+        "title": "",
+        "degree":"mater",
+        "grade": "109",
+        "img": "assets/img/member/alumni/黃楚耘.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "吳允呈",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/吳允呈.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "廖品豪",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/廖品豪.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "楊皓珽",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/楊皓珽.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "洪以恩",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/洪以恩.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "葉駿諭",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/葉駿諭.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "林璟翔",
+        "title": "",
+        "degree":"mater",
+        "grade": "111",
+        "img": "assets/img/member/alumni/林璟翔.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "陳君榮",
+        "title": "",
+        "degree":"mater",
+        "grade": "110",
+        "img": "assets/img/member/alumni/陳君榮.jpg",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "陳原禾",
@@ -378,7 +479,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "謝嘉祐",
@@ -389,18 +492,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
-      },
-      {
-        "name": "許佩慈",
-        "title": "",
-        "degree":"master",
-        "grade": "",
-        "img": "assets/img/member/alumni/許佩慈.jpg",
-        "ghlinks" : "",
-        "ytlinks" : "",
-        "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "蘇亭云",
@@ -411,7 +505,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "董晏銘",
@@ -422,7 +518,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "白繹程",
@@ -433,7 +531,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "楊敦富",
@@ -444,7 +544,9 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "徐凱瑞",
@@ -455,18 +557,35 @@
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
+      },
+      {
+        "name": "王祐晨",
+        "title": "",
+        "degree":"mater",
+        "grade": "111",
+        "img": "",
+        "ghlinks" : "",
+        "ytlinks" : "",
+        "fblinks" : "",
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       },
       {
         "name": "鄭志川",
         "title": "聯發科技術副理",
         "degree":"doctor",
         "grade": "98",
-        "img": "assets/img/lab/q.jpg",
+        "img": "",
         "ghlinks" : "",
         "ytlinks" : "",
         "fblinks" : "",
-        "blinks" : ""
+        "blinks" : "",
+        "keyword":[],
+        "description": ""
       }
       
     ]
