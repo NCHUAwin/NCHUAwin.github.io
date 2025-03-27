@@ -1335,15 +1335,24 @@ th {
   height: auto;
   object-fit: cover;
   aspect-ratio: 1 / 1;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .card-description {
-  max-height: 40px; /* Set the maximum height */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
-  line-height: 1.4; /* Adjust line-height for better readability */
-  color: #000;
+  max-height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.card-description:hover {
+  max-height: none;
+  white-space: normal;
+  overflow: visible;
 }
 
 .card-img.bg-light {
