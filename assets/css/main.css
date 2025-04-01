@@ -912,7 +912,6 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-
 .services .service-item {
   position: relative;
   border: 2px solid #ddd; /* Light gray border */
@@ -1325,10 +1324,6 @@ th {
   background-color: #f2f2f2;
 }
 
-.card {
-  border-radius: 8px; /* Rounded corners */
-}
-
 .card-img {
   border-radius: 25px;
   max-width: 100%;
@@ -1337,6 +1332,51 @@ th {
   aspect-ratio: 1 / 1;
   width: 200px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img.bg-light {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.person-icon {
+  font-size: 120px;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .card-img,
+  .card-img.bg-light {
+    width: 150px;
+    height: 150px;
+  }
+
+  .person-icon {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-img,
+  .card-img.bg-light {
+    width: 120px;
+    height: 120px;
+  }
+
+  .person-icon {
+    font-size: 70px;
+  }
 }
 
 .card-description {
@@ -1344,15 +1384,19 @@ th {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   transition: max-height 0.3s ease-in-out;
 }
 
 .card-description:hover {
-  max-height: none;
-  white-space: normal;
+  max-height: 200px; /* Adjust this value based on content */
+  -webkit-line-clamp: unset; /* Allow full expansion */
   overflow: visible;
+  white-space: normal;
+  background: white; /* Optional: Add background to prevent text overlap */
+  position: relative; /* Helps in managing layout */
+  z-index: 10; /* Ensures it appears above other elements */
 }
 
 .card-img.bg-light {
@@ -1363,7 +1407,7 @@ th {
   justify-content: center;
   align-items: center;
   padding: 0; /* Remove unnecessary padding */
-  background-color: #f8f9fa; /* Light background to match Bootstrap’s default */
+  background-color: #f8f9fa; /* Light background to match Bootstrap's default */
 }
 
 .person-icon {
