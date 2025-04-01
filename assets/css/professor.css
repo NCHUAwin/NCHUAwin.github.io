@@ -89,6 +89,44 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.image-hover {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Responsive width */
+  max-width: 266px; /* Ensures max width (e.g., 266px to maintain 4:3 with 200px height) */
+  aspect-ratio: 3 / 4; /* Enforces the 4:3 aspect ratio */
+  overflow: hidden; /* Prevents image overflow */
+}
+
+.image-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-hover img.hover-img {
+  opacity: 0;
+}
+
+.image-hover:hover img.default-img {
+  opacity: 0;
+}
+
+.image-hover:hover img.hover-img {
+  opacity: 1;
+}
+
+/* Adjust margins for responsiveness */
+@media (max-width: 992px) {
+  .image-hover {
+    margin: 0 auto; /* Centers the image on smaller screens */
+  }
+}
+
 /*--------------------------------------------------------------
 # NavBar
 --------------------------------------------------------------*/
