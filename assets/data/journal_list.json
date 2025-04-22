@@ -1,0 +1,236 @@
+[
+  {
+    "timestamp": "2025/4/22 上午 9:02:52",
+    "title": "Automated Zebrafish Spine Scoring System Based on Instance Segmentation",
+    "authors": "Wen-Hsin Chen, Tien-Ying Kuo, Yu-Jen Wei, Cheng-Jung Ho, Ming-Der Lin, Huan Chen, Wen-Ying Lin",
+    "journal": "IEEE Access",
+    "volume": "vol.13",
+    "page": "pp.18814--18826",
+    "year": 2025,
+    "doi": "https://doi.org/10.1109/ACCESS.2025.3532680",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:04:08",
+    "title": "An Accurate and Robust Matching Network for Full/Partial Point Cloud Registration",
+    "authors": "Chang, Min-Kuan and Yang, Chi-Sheng and Chang, Yu-Fang and Chen, Huan and Wu, Kuo-Guan",
+    "journal": "IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)",
+    "volume": "",
+    "page": "pp.2272--2277",
+    "year": 2024,
+    "doi": "https://doi.org/10.1109/COMPSAC61105.2024.00365",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:05:42",
+    "title": "A differential privacy-preserving federated learning scheme with predictive maintenance of wind turbines based on deep learning for feature compression and anomaly detection with state assessment",
+    "authors": "Huan Chen, Hsin-Yao Hsu, Jia-You Hsieh & Hsiang-En Hung ",
+    "journal": " Journal of Mechanical Science and Technology",
+    "volume": "vol.38",
+    "page": "pp. 3413--3429",
+    "year": 2024,
+    "doi": "https://doi.org/10.1007/s12206-024-0616-9",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:18:43",
+    "title": "Covid-19 Detection Based on Chest X-ray Images Using Attention Mechanism Modules and Weight Uncertainty in Bayesian Neural Networks",
+    "authors": "Huan Chen, Jia‐You Hsieh, Hsin-Yao Hsu & Yi-Feng Chang ",
+    "journal": "Artificial Intelligence for Internet of Things (IoT) and Health Systems Operability",
+    "volume": "vol.8",
+    "page": "pp.104--115",
+    "year": 2024,
+    "doi": "https://doi.org/10.1007/978-3-031-52787-6_9",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:21:51",
+    "title": "Scanning QR Codes for Object Detection Based on Yolo-V7 Algorithm and Deblurring Generative Adversarial Network",
+    "authors": "Huan Chen, Hsin-Yao Hsu, Kuan-Ting Lin, Jia-You Hsieh, Yi-Feng Chang & Bo-Chao Cheng ",
+    "journal": "Frontier Computing on Industrial Applications",
+    "volume": "vol.4",
+    "page": "pp.115--126",
+    "year": 2024,
+    "doi": "https://doi.org/10.1007/978-981-99-9342-0_13",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:06:58",
+    "title": "An adaptive federated reinforcement learning framework with proximal policy optimization for autonomous driving",
+    "authors": "Huan Chen, Kuan-Lin Chen, Hsin-Yao Hsu, Jia-You Hsieh",
+    "journal": "IEEE 5th Eurasia Conference on IOT, Communication and Engineering (ECICE)",
+    "volume": "",
+    "page": "pp.331--335",
+    "year": 2023,
+    "doi": "https://doi.org/10.1109/ECICE59523.2023.10383091",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:20:20",
+    "title": "SEFSD: an effective deployment algorithm for fog computing systems",
+    "authors": "Huan Chen, Wei-Yan Chang, Tai-Lin Chiu, Ming-Chao Chiang & Chun-Wei Tsai ",
+    "journal": "Journal of Cloud Computing",
+    "volume": "vol.12, no.105",
+    "page": "pp.1--15",
+    "year": 2023,
+    "doi": "https://doi.org/10.1186/s13677-023-00475-x",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:23:51",
+    "title": "A hybrid firefly with dynamic multi-swarm particle swarm optimization for WSN deployment",
+    "authors": "Wei-Yan Chang, Prathibha Soma, Huan Chen, Hsuan Chang, Chun-Wei Tsai",
+    "journal": "Journal of Internet Technology",
+    "volume": "vol.24, no.4",
+    "page": "pp.825--836",
+    "year": 2023,
+    "doi": "https://jit.ndhu.edu.tw/article/view/2926",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:29:52",
+    "title": "A Novel Schematic Design of Enhanced State Gated Transformers for Energy Disaggregation of Nonintrusive Load Monitoring",
+    "authors": "Chen, Huan and Wu, Ming-Ru Albert and Wu, James C.H.",
+    "journal": "IEEE Sensors Letters",
+    "volume": "vol.7, no.6",
+    "page": "pp.1--4",
+    "year": 2023,
+    "doi": "https://doi.org/10.1109/LSENS.2023.3278696",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:17:35",
+    "title": "Predictive maintenance of abnormal wind turbine events by using machine learning based on condition monitoring for anomaly detection",
+    "authors": "Huan Chen, Jyh-Yih Hsu, Jia-You Hsieh, Hsin-Yao Hsu, Chia-Hao Chang, Yu-Ju Lin",
+    "journal": "Journal of Mechanical Science and Technology",
+    "volume": "vol.35",
+    "page": "pp.5323--5333",
+    "year": 2021,
+    "doi": "https://doi.org/10.1007/s12206-021-1105-z",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:18:55",
+    "title": "Time-predictable routing algorithm for Time-Sensitive Networking: Schedulable guarantee of Time-Triggered streams",
+    "authors": "Shih-Hung Chang, Huan Chen, Bo-Chao Cheng",
+    "journal": "Computer Communications",
+    "volume": "vol.172, no.15",
+    "page": "pp.183--195",
+    "year": 2021,
+    "doi": "https://doi.org/10.1016/j.comcom.2021.03.019",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:20:03",
+    "title": "A convolutional autoencoder-based approach with batch normalization for energy disaggregation",
+    "authors": "Huan Chen, Yue-Hsien Wang, Chun-Hung Fan",
+    "journal": "The Journal of Supercomputing",
+    "volume": "vol.77",
+    "page": "pp.2961--2978",
+    "year": 2021,
+    "doi": "https://doi.org/10.1007/s11227-020-03375-y",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:22:06",
+    "title": "An effective scheduling algorithm for wireless sensor network with adjustable sensing range",
+    "authors": "Po-Hsun Chen, Tai-Lin Chiu, Chun-Hung Fan, Huan Chen, Chun-Wei Tsa",
+    "journal": "Communications in Computer and Information Science (CCIS)",
+    "volume": "vol.1227",
+    "page": "",
+    "year": 2020,
+    "doi": "https://doi.org/10.1007/978-981-15-6113-9_13",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:26:11",
+    "title": "The Recommending Agricultural Product Sales Promotion Mode in E‐Commerce Using Reinforcement Learning with Contextual Multiarmed Bandit Algorithms",
+    "authors": "Jyh-Yih Hsu, Wei-Kuo Tseng, Jia-You Hsieh, Chao-Jen Chang, Huan Chen",
+    "journal": "Mathematical Problems in Engineering",
+    "volume": "",
+    "page": "pp.8836000--8836009",
+    "year": 2020,
+    "doi": "https://doi.org/10.1155/2020/8836000",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:28:20",
+    "title": "Building the Rice Blast Disease Prediction Model based on Machine Learning and Neural Networks",
+    "authors": "Jia-You Hsieh, Wei Huang, Hsin-Tieh Yang, Chia-Chieh Lin, Yo-Chung Fan and Huan Chen",
+    "journal": "EasyChair",
+    "volume": "",
+    "page": "",
+    "year": 2019,
+    "doi": "https://easychair.org/publications/preprint/mD3g",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:29:18",
+    "title": "An effective metaheuristic algorithm for the deployment problem of edge computing servers",
+    "authors": "Chiu, Tai-Lin and Chen, Po-Hsun and Chen, Huan and Tsai, Chun-Wei",
+    "journal": " IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+    "volume": "",
+    "page": "",
+    "year": 2019,
+    "doi": "https://doi.org/10.1109/SMC.2019.8914487",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 11:30:23",
+    "title": "SEHAS: a novel metaheuristic algorithm for home appliances scheduling in smart grid",
+    "authors": "Chun-Hung Fan, Huan Chen, Chun-Wei Tsai",
+    "journal": "IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+    "volume": "",
+    "page": "pp.786--791",
+    "year": 2019,
+    "doi": "https://doi.org/10.1109/SMC.2019.8914018",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 2:06:39",
+    "title": "A high-performance parallel coral reef optimization for data clustering",
+    "authors": "Chun-Wei Tsai, Wei-Yan Chang, Yi-Chung Wang, Huan Chen",
+    "journal": "Soft Computing",
+    "volume": "vol.23",
+    "page": "pp.9327--9340",
+    "year": 2019,
+    "doi": "https://doi.org/10.1007/s00500-019-03950-3",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 上午 9:01:04",
+    "title": "Energy Residue Aware (ERA) Clustering Algorithm for Leach-based Wireless Sensor Networks",
+    "authors": "Huan Chen, Cheng-Shong Wu, Yuan-Sun Chu, Chih-Chuan Cheng, Li-Kuang Tsai",
+    "journal": "Second International Conference on Systems and Networks Communications (ICSNC 2007)",
+    "volume": "",
+    "page": "pp.40--40",
+    "year": 2007,
+    "doi": "https://doi.org/10.1109/ICSNC.2007.34",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 上午 8:49:14",
+    "title": "Dynamic call admission control scheme for QoS priority handoff in multimedia cellular systems",
+    "authors": "Huan Chen, Sunil Kumar, C-CJ Kuo",
+    "journal": "IEEE Wireless Communications and Networking Conference Record. WCNC 2002 (Cat. No.02TH8609)",
+    "volume": "vol.1",
+    "page": "pp.114--118",
+    "year": 2002,
+    "doi": "https://doi.org/10.1109/WCNC.2002.993474",
+    "tag": []
+  }
+]

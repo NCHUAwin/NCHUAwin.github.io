@@ -31,6 +31,9 @@
     <!-- Main CSS File -->
     <link href="assets/css/professor.css" rel="stylesheet" />
 
+    <!-- Canva File -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/imember-bootstrap-member-websites-template/
@@ -331,28 +334,48 @@
             <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
                 <div class="content justify-content-center">
                     <h2>Publications</h2>
-                    <p>
-                        Department of Computer Science and Engineering, National Chung
-                        Hsing University
-                    </p>
-                    <a href="https://scholar.google.com/citations?hl=zh-TW&user=EpJt0WEAAAAJ">Google Scholar</a>
+                    <h4><strong>Huan Chen</strong></h4>
+                    <p><em>
+                            Department of Computer Science and Engineering, National Chung Hsing University (NCHU)
+                        </em></p>
+
 
                     <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                         data-sort="original-order">
                         <div class="container">
-                            <!-- Filter and Sort Options -->
-                            <div class="filter-sort-container">
-                                <select id="filter-select">
-                                    <option value="all">All Publications</option>
-                                    <option value="Recent">Recent 5 Years</option>
-                                    <option value="Represent">Represent</option>
-                                </select>
 
-                                <select id="sort-select">
-                                    <option value="year">Sort by Year</option>
-                                    <option value="title">Sort by Title</option>
-                                </select>
+                            <!-- Shows the trend of the publication -->
+                            <div class="text-center my-3">
+                                <button class="btn btn-light"><a
+                                        href="https://scholar.google.com/citations?hl=zh-TW&user=EpJt0WEAAAAJ">Google
+                                        Scholar</a></button>
+                                <button id="toggle-chart-mode" class="btn btn-light">
+                                    Switch to Combined View
+                                </button>
+
+                                <canvas id="publication-trend-chart" width="600" height="150" class="my-4"></canvas>
                             </div>
+
+                            <!-- Filter and Sort Options -->
+                            <div class="filter-sort-container my-3">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2">
+                                        <select class="form-select" id="filter-select">
+                                            <option value="all">All Publications</option>
+                                            <option value="Recent">Recent 5 Years</option>
+                                            <option value="Represent">Represent</option>
+                                            <option value="Conference">Conference</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-2">
+                                        <select class="form-select" id="sort-select">
+                                            <option value="year">Sort by Year</option>
+                                            <option value="title">Sort by Title</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <div class="content justify-content-center" id="journal-container">
                                 <!-- The journal entries will be inserted here by JavaScript -->
