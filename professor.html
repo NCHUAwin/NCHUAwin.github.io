@@ -33,6 +33,7 @@
 
     <!-- Canva File -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
 
     <!-- =======================================================
   * Template Name: iPortfolio
@@ -334,7 +335,10 @@
             <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
                 <div class="content justify-content-center">
                     <h2>Publications</h2>
-                    <h4><strong>Huan Chen</strong></h4>
+                    <h4><strong>Huan
+                            Chen</strong> (<a
+                            href="https://scholar.google.com/citations?hl=zh-TW&user=EpJt0WEAAAAJ">Google Scholar</a>)
+                    </h4>
                     <p><em>
                             Department of Computer Science and Engineering, National Chung Hsing University (NCHU)
                         </em></p>
@@ -346,14 +350,11 @@
 
                             <!-- Shows the trend of the publication -->
                             <div class="text-center my-3">
-                                <button class="btn btn-light"><a
-                                        href="https://scholar.google.com/citations?hl=zh-TW&user=EpJt0WEAAAAJ">Google
-                                        Scholar</a></button>
                                 <button id="toggle-chart-mode" class="btn btn-light">
                                     Switch to Combined View
                                 </button>
-
-                                <canvas id="publication-trend-chart" width="600" height="150" class="my-4"></canvas>
+                                <button id="reset-zoom" class="btn btn-light">Reset Zoom</button>
+                                <canvas id="publication-trend-chart" class="my-4"></canvas>
                             </div>
 
                             <!-- Filter and Sort Options -->
@@ -376,10 +377,12 @@
                                 </div>
                             </div>
 
+                            <div id="pagination" class="m-4 text-center"></div>
 
                             <div class="content justify-content-center" id="journal-container">
                                 <!-- The journal entries will be inserted here by JavaScript -->
                             </div>
+
 
                             <script src="assets/js/convert_publication.js"></script>
                         </div>

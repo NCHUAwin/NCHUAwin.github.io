@@ -210,6 +210,163 @@
     "tag": []
   },
   {
+    "timestamp": "2025/4/22 下午 8:52:08",
+    "title": "An Effective Deep Learning Framework for Detecting Misconduct of the Trucker",
+    "authors": "An Effective Deep Learning Framework for Detecting Misconduct of the Trucker",
+    "journal": "9th International Conference on Web Intelligence, Mining and Semantics",
+    "volume": "vol.1, no.21",
+    "page": "pp.1--8",
+    "year": 2019,
+    "doi": "https://doi.org/10.1145/3326467.3326482",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 8:53:53",
+    "title": "Study on the application of indoor positioning based on low power Bluetooth device combined with Kalman filter and machine learning",
+    "authors": "Jia-You Hsieh, Chun-Hung Fan, Jian-Zhi Liao, Jyh-Yih Hsu, Huan Chen",
+    "journal": "EasyChair",
+    "volume": "",
+    "page": "pp.1--9",
+    "year": 2019,
+    "doi": "https://easychair.org/publications/preprint/VhvV",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 下午 8:55:32",
+    "title": "On semantic annotation for sports video highlights by mining user comments from live broadcast social network",
+    "authors": "Po-Fang Hsu, Yao-Chung Fan, Huan Chen",
+    "journal": "Advances on Broadband and Wireless Computing, Communication and Applications: Proceedings of the 13th International Conference on Broadband and Wireless Computing, Communication and Applications (BWCCA-2018)",
+    "volume": "vol.25",
+    "page": "pp.367--380",
+    "year": 2019,
+    "doi": "https://doi.org/10.1007/978-3-030-02613-4_33",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:04:42",
+    "title": "An effective metaheuristic algorithm for the deployment problem of edge computing servers",
+    "authors": "Tai-Lin Chiu, Po-Hsun Chen, Huan Chen, Chun-Wei Tsai",
+    "journal": "IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+    "volume": "",
+    "page": "pp.1995--2000",
+    "year": 2019,
+    "doi": "https://doi.org/10.1109/SMC.2019.8914487",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 8:57:57",
+    "title": "The design and implementation of a low-cost power monitoring system for campus power monitoring",
+    "authors": "Yao-Chung Fan and Huan Chen",
+    "journal": "IEEE International Conference on Applied System Invention (ICASI)",
+    "volume": "",
+    "page": "pp.720--721",
+    "year": 2018,
+    "doi": "https://doi.org/10.1109/ICASI.2018.8394360",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 8:59:06",
+    "title": "Enabling in-network aggregation by diffusion units for urban scale M2M networks",
+    "authors": "Yao-Chung Fan, Huan Chen, Fang-Yie Leu, Ilsun You",
+    "journal": "Journal of Network and Computer Applications",
+    "volume": "vol.93, no.1",
+    "page": "pp.215--227",
+    "year": 2017,
+    "doi": "https://doi.org/10.1016/j.jnca.2017.05.002",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:00:19",
+    "title": "Special point representations for reducing data space requirements of finger-vein recognition applications",
+    "authors": "Yu-Chun Cheng, Huan Chen, Bo-Chao Cheng",
+    "journal": "Multimedia Tools and Applications",
+    "volume": "vol.76",
+    "page": "pp.11251--11271",
+    "year": 2016,
+    "doi": "https://doi.org/10.1007/s11042-016-3300-y",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:01:27",
+    "title": "Identifying variable-power appliances in non-intrusive load monitoring systems",
+    "authors": "Hung-Yuan Chen, Yao-Chung Fan, Chien-Liang Lai, Huan Chen",
+    "journal": "10th International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS)",
+    "volume": "",
+    "page": "pp.452--457",
+    "year": 2016,
+    "doi": "https://doi.org/10.1109/IMIS.2016.124",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:08:05",
+    "title": "E-Cube+ Routing Protocol for Wireless Sensor Networks in the Presence of Network Failures",
+    "authors": "Bo-Chao Cheng, Guo-Tan Liao, Yuan-Fu Chen, Huan Chen",
+    "journal": "International Journal of Distributed Sensor Networks",
+    "volume": "vol.11, no.3",
+    "page": "pp.231514--231524",
+    "year": 2015,
+    "doi": "https://doi.org/10.1155/2015/231514",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:09:25",
+    "title": "SMILE+: An Efficient Privacy Preserving Missed-Connection Service in IoV Networks",
+    "authors": "Shih Hui Yu, Pierre Pascal Lindenberg, Bo Chao Cheng, Huan Chen",
+    "journal": " Future Information Technology - II ",
+    "volume": "",
+    "page": "pp.163--172",
+    "year": 2015,
+    "doi": "https://doi.org/10.1007/978-94-017-9558-6_20",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:10:38",
+    "title": "A framework for extracting sports video highlights using social media",
+    "authors": "Yao-Chung Fan, Huan Chen, Wei-An Chen",
+    "journal": " Advances in Multimedia Information Processing -- PCM",
+    "volume": "",
+    "page": "pp.670--677",
+    "year": 2015,
+    "doi": "https://doi.org/10.1007/978-3-319-24078-7_69",
+    "tag": [
+      "conference"
+    ]
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:14:54",
+    "title": "Athena: capacity enhancement of reversible data hiding with consideration of the adaptive embedding level",
+    "authors": "Ya-Chi Hsu, Bo-Chao Cheng, Huan Chen, Yuan-Sun Chu",
+    "journal": "Journal of Visual Languages & Computing",
+    "volume": "vol.25, no.6",
+    "page": "pp.782--790",
+    "year": 2014,
+    "doi": "https://doi.org/10.1016/j.jvlc.2014.10.008",
+    "tag": []
+  },
+  {
+    "timestamp": "2025/4/22 下午 9:15:55",
+    "title": "Hybrid classification engine for cardiac arrhythmia cloud service in elderly healthcare management",
+    "authors": "Huan Chen, Bo-Chao Cheng, Guo-Tan Liao, Ting-Chun Kuo",
+    "journal": "Journal of Visual Languages & Computing",
+    "volume": "vol.25, no.6",
+    "page": "pp.745--753",
+    "year": 2014,
+    "doi": "https://doi.org/10.1016/j.jvlc.2014.09.012",
+    "tag": []
+  },
+  {
     "timestamp": "2025/4/22 上午 9:01:04",
     "title": "Energy Residue Aware (ERA) Clustering Algorithm for Leach-based Wireless Sensor Networks",
     "authors": "Huan Chen, Cheng-Shong Wu, Yuan-Sun Chu, Chih-Chuan Cheng, Li-Kuang Tsai",
@@ -217,7 +374,7 @@
     "volume": "",
     "page": "pp.40--40",
     "year": 2007,
-    "doi": "https://doi.org/10.1109/ICSNC.2007.34",
+    "doi": "2007",
     "tag": [
       "conference"
     ]
