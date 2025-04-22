@@ -1,0 +1,107 @@
+[
+  {
+    "時間戳記": "2025/3/27 下午 2:25:56",
+    "name": "劉冠伯",
+    "grade": 113,
+    "email": "g113056116@smail.nchu.edu.tw",
+    "img": "assets/img/member/113劉冠伯.png",
+    "fblinks": "https://www.linkedin.com/in/aidenliu",
+    "ytlinks": "",
+    "ghlinks": "https://github.com/waterbear-tw",
+    "blinks": "",
+    "description": "Engaged in reinforcement learning and resource allocation control in 6G networks.",
+    "keyword": [],
+    "title": "碩一",
+    "degree": "master"
+  },
+  {
+    "時間戳記": "2025/3/27 下午 3:51:30",
+    "name": "陳信宇",
+    "grade": 113,
+    "email": "andy0413@hotmail.com.tw",
+    "img": "assets/img/member/113陳信宇.png",
+    "fblinks": "",
+    "ytlinks": "",
+    "ghlinks": "",
+    "blinks": "",
+    "description": "",
+    "keyword": [
+      "wsn"
+    ],
+    "title": "碩一",
+    "degree": "master"
+  },
+  {
+    "時間戳記": "2025/3/27 下午 2:00:05",
+    "name": "陳昱丞",
+    "grade": 112,
+    "email": "scdev0210@gmail.com",
+    "img": "assets/img/member/112陳昱丞.png",
+    "fblinks": "https://www.linkedin.com/in/yu-cheng-chen-460aa1189",
+    "ytlinks": "https://www.youtube.com/@scdev-0210",
+    "ghlinks": "https://github.com/sc0210",
+    "blinks": "https://sc0210.netlify.app/",
+    "description": "Focused on developing Metaheuristic algorithm to solve coverage scheduling and routing optimization problem in WSN.",
+    "keyword": [
+      "wsn",
+      "algorithm"
+    ],
+    "title": "碩二",
+    "degree": "master"
+  },
+  {
+    "時間戳記": "2025/3/27 下午 2:52:16",
+    "name": "羅泓喆",
+    "grade": 112,
+    "email": "g112056002@mail.nchu.edu.tw",
+    "img": "assets/img/member/112羅泓喆.png",
+    "fblinks": "",
+    "ytlinks": "",
+    "ghlinks": "",
+    "blinks": "",
+    "description": "",
+    "keyword": [
+      "lidar",
+      "點雲分割"
+    ],
+    "title": "碩二",
+    "degree": "master"
+  },
+  {
+    "時間戳記": "2025/3/27 下午 4:02:10",
+    "name": "陳珮禎",
+    "grade": 112,
+    "email": "penny5462254@gmail.com",
+    "img": "assets/img/member/112陳珮禎.png",
+    "fblinks": "",
+    "ytlinks": "",
+    "ghlinks": "",
+    "blinks": "",
+    "description": "Combining federated learning with Bayesian optimization to predict appliance-level energy usage from aggregated power data.",
+    "keyword": [
+      "NILM",
+      "FL"
+    ],
+    "title": "在校生碩二",
+    "degree": "master"
+  },
+  {
+    "時間戳記": "2025/3/27 下午 6:37:04",
+    "name": "郭庭均",
+    "grade": 102,
+    "email": "j033312003@gmail.com",
+    "img": "assets/img/member/102郭庭均.png",
+    "fblinks": "https://www.facebook.com/wuguofish",
+    "ytlinks": "",
+    "ghlinks": "https://github.com/wuguofish",
+    "blinks": "",
+    "description": "",
+    "keyword": [
+      "Web APP",
+      "Android APP",
+      "Data Mining"
+    ],
+    "title": "鮮速冷鏈科技 經理",
+    "degree": "master"
+  }
+]
