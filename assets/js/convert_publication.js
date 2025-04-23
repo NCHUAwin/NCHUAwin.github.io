@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const journalData = allYears.map(year => journalCounts[year] || 0);
       const conferenceData = allYears.map(year => conferenceCounts[year] || 0);
 
-      console.log("Years:", allYears);
-      console.log("Journal Data:", journalData);
-      console.log("Conference Data:", conferenceData);
+      // console.log("Years:", allYears);
+      // console.log("Journal Data:", journalData);
+      // console.log("Conference Data:", conferenceData);
       
       // Initial chart (pass full data, but limit the view)
       drawChart(allYears, journalData, conferenceData); 
