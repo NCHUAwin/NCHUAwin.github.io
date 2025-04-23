@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sortSelect = document.getElementById("sort-select");
   const container = document.getElementById("journal-container");
 
-  document.getElementById("reset-zoom").addEventListener("click", () => {
-    if (chartInstance) chartInstance.resetZoom();
-  });
-
   if (!filterSelect || !sortSelect || !container) {
     console.error("Filter, Sort, or container elements not found in the DOM!");
     return;
@@ -15,16 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("assets/data/journal_list.json")
     .then(response => response.json())
     .then(data => {
-      const publications = data; // Fix: since the root is an array
+      const publications = data;
       const journalCounts = {};
       const conferenceCounts = {};
-      
+
       data.forEach(entry => {
-        const year = entry.year;
+        const year = Number(entry.year);
         if (!year) return;
-      
+
         const isConference = Array.isArray(entry.tag) && entry.tag.includes("conference");
-      
+
         if (isConference) {
           conferenceCounts[year] = (conferenceCounts[year] || 0) + 1;
         } else {
@@ -32,74 +28,47 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      let isCombinedMode = false; // Start in separate mode
       let chartInstance = null;
-      
-      function drawChart(years, journalData, conferenceData, mode = "separate", minX = null, maxX = null) {
-        if (chartInstance) chartInstance.destroy();
-      
+
+      function drawChart(years, journalData, conferenceData) {
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+
         const ctx = document.getElementById("publication-trend-chart").getContext("2d");
-      
+
         const data = {
           labels: years,
           datasets: []
         };
-      
-        if (mode === "combined") {
-          const combinedData = years.map((y, i) => (journalData[i] || 0) + (conferenceData[i] || 0));
-          data.datasets.push({
-            label: "All Publications",
-            data: combinedData,
-            backgroundColor: "#59a14f",
-            borderColor: "#59a14f",
-            tension: 0.3,
-            pointRadius: 4
-          });
-        } else {
-          data.datasets.push(
-            {
-              label: "Journal",
-              data: journalData,
-              backgroundColor: "#4e79a7",
-              borderColor: "#4e79a7",
-              tension: 0.3,
-              pointRadius: 4
-            },
-            {
-              label: "Conference",
-              data: conferenceData,
-              backgroundColor: "#f28e2b",
-              borderColor: "#f28e2b",
-              tension: 0.3,
-              pointRadius: 4
-            }
-          );
-        }
-      
+        
+        data.datasets.push(
+          {
+            label: "Conference",
+            data: conferenceData,
+            backgroundColor: "#cddc39",
+            // barPercentage: 0.4,
+            // categoryPercentage: 0.6
+          },
+          {
+            label: "Journal",
+            data: journalData,
+            backgroundColor: "#80cbc4",
+            // barPercentage: 0.4,
+            // categoryPercentage: 0.6
+          }
+        );
+        
         chartInstance = new Chart(ctx, {
-          type: "line",
+          type: "bar",
           data,
           options: {
             responsive: true,
             maintainAspectRatio: true,
             plugins: {
-              zoom: {
-                pan: {
-                  enabled: true,
-                  mode: 'x',
-                  modifierKey: 'ctrl'
-                },
-                zoom: {
-                  wheel: { enabled: true },
-                  pinch: { enabled: true },
-                  mode: 'x',
-                }
-              },
               title: {
                 display: true,
-                text: mode === "combined"
-                  ? "Annual Combined Publications"
-                  : "Annual Publication Trend (Journal vs. Conference)"
+                text:"Annual Publication Trend (Journal vs. Conference)"
               },
               legend: {
                 display: true,
@@ -108,59 +77,52 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             scales: {
               y: {
-                beginAtZero: true,
+                stacked: true,
                 title: {
                   display: true,
-                  text: "Number of Publications"
+                  text: "Publications"
+                },
+                ticks: {
+                  stepSize: 1, // Ensures steps are in integers
+                  callback: function(value) {
+                    return Number(value).toFixed(0); 
+                  }
                 }
               },
               x: {
+                stacked: true,
                 title: {
                   display: true,
                   text: "Year"
-                },
-                min: minX,
-                max: maxX,
+                }
               }
             }
           }
         });
       }
-      
-      
-      // After fetching data and preparing journalCounts / conferenceCounts:
+
       const allYears = Array.from(new Set([
         ...Object.keys(journalCounts),
-        ...Object.keys(conferenceCounts),
-      ]))
-        .map(y => parseInt(y))
-        .sort((a, b) => a - b);
-      
-      // Get the last 10 years
+        ...Object.keys(conferenceCounts)
+      ].map(Number))).sort((a, b) => a - b);
+
       const journalData = allYears.map(year => journalCounts[year] || 0);
       const conferenceData = allYears.map(year => conferenceCounts[year] || 0);
-      
-      // Find the last 10 years range
-      const recentYears = allYears.slice(-10);
-      const minYear = recentYears[0];
-      const maxYear = recentYears[recentYears.length - 1];
+
+      console.log("Years:", allYears);
+      console.log("Journal Data:", journalData);
+      console.log("Conference Data:", conferenceData);
       
       // Initial chart (pass full data, but limit the view)
-      drawChart(recentYears, journalData, conferenceData, "separate", minYear, maxYear);
+      drawChart(allYears, journalData, conferenceData); 
       
-      
-      // Initial chart
-      drawChart(recentYears, journalData, conferenceData, "separate");
-      
-      // Toggle chart mode on button click
-      document.getElementById("toggle-chart-mode").addEventListener("click", () => {
-        isCombinedMode = !isCombinedMode;
-        drawChart(recentYears, journalData, conferenceData, isCombinedMode ? "combined" : "separate", minYear, maxYear);
+      // const sampleYears = [2020, 2021, 2022];
+      // const sampleJournalData = [5, 10, 15];
+      // const sampleConferenceData = [3, 7, 12];
 
-        const btn = document.getElementById("toggle-chart-mode");
-        btn.textContent = isCombinedMode ? "Switch to Separate View" : "Switch to Combined View";
-      });
-
+      // drawChart(sampleYears, sampleJournalData, sampleConferenceData);
+      
+      // Logic for pagination and filtering unchanged
       const itemsPerPage = 10;
       function createPaginationControls(totalItems, currentPage) {
         const paginationContainer = document.getElementById("pagination");
@@ -194,8 +156,6 @@ document.addEventListener("DOMContentLoaded", function () {
           paginationContainer.appendChild(createButton("Next", currentPage + 1));
         }
       }
-      
-
       
       function displayPublications(filteredPublications, page = 1) {
         container.innerHTML = "";

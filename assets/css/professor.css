@@ -361,12 +361,23 @@ section,
 
 #publication-trend-chart {
   display: block;
-  width: 100%;
+  width: 80%;
+  max-width: 1000px;
   height: auto;
-  max-width: 600px;
-  aspect-ratio: 4 / 3; /* Optional: maintains height proportionally */
-  margin: 2rem auto 0 auto;
+  aspect-ratio: 16 / 9;
+  margin: 2rem auto;
+  padding: 0 1rem; /* some padding for small screens */
+  box-sizing: border-box;
 }
+
+/* Optional: Media query for extra small devices */
+@media (max-width: 600px) {
+  #publication-trend-chart {
+    width: 100%; /* Ensures chart fills available width */
+    aspect-ratio: 4 / 3;
+  }
+}
+
 /*--------------------------------------------------------------
 # Others
 --------------------------------------------------------------*/
