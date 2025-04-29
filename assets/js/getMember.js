@@ -19,55 +19,88 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           const memberDiv = document.createElement("div");
-          memberDiv.classList.add("col-12" ,"col-md-6","p-2", "mb-3", "isotope-item", `filter-${category}`, `filter-${member.degree}`);
+          memberDiv.classList.add("col-12" ,"col-md-6","p-2", "isotope-item", `filter-${category}`, `filter-${member.degree}`);
 
           // Convert keyword array to a string if it exists
           const keywords = member.keyword ? member.keyword.map(k => `<span class="badge bg-secondary me-1">${k}</span>`).join(' ') : '';
 
           memberDiv.innerHTML = `
-              <div class="card shadow-sm h-auto d-flex flex-row align-items-center">
-                <div class="col-4 d-flex justify-content-center">
-                ${member.img 
-                  ? `<img src="${member.img}" class="card-img img-fluid p-3" alt="${member.name}" loading="lazy"/>`
-                  : `<div class="card-img bg-light d-flex justify-content-center align-items-center">
-                      <i class="bi bi-person-exclamation text-secondary person-icon"></i>
-                    </div>`
-                }
+          <div class="card shadow-sm">
+            <div class="row no-gutters w-100 d-flex justify-content-center align-items-center">
+
+                <div class="col-12 col-sm-4 ">
+                <img
+                  src="${member.img
+                    ? member.img
+                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name[0])}&background=ffff&rounded=true&size=200`}"
+                  class="card-img p-2"
+                  alt="${member.name}"
+                  loading="lazy"
+                >
               </div>
 
-                <div class="col-8 card-body">
-                  <h5 class="card-title">${member.grade ? member.grade + '級 ' : ''}${member.name}</h5>
-                  
-                  ${member.title ? `<p class="card-text">${category !== "studying" ? '現職：' + member.title : member.title}</p>` : ''}
+              <div class="col-12 col-sm-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ${member.grade ? member.grade + '級 ' : ''}
+                    ${member.thesis
+                      ? `<a href="${member.thesis}">${member.name}</a>`
+                      : member.name}
+                  </h5>
 
-                  <p class="card-text card-description">${member.description ? member.description : ''}</p>
+                  ${member.title
+                    ? `<p class="card-text">${category !== "studying"
+                        ? '現職：' + member.title
+                        : member.title
+                      }</p>`
+                    : ''}
 
-                  ${keywords ? `<p class="mt-2">${keywords.split(' ').map(keyword => `#${keyword}`).join(' ')}</p>` : ''}
-                  
-                  <div class="align-content-start pt-2">
-                    ${member.fblinks ? `<a href="${member.fblinks}" class="btn btn-light btn-sm" title="Contact">
-                      <i class="bi bi-person-lines-fill"></i>
-                    </a>` : ''}
-                    
-                    ${member.email ? `<a href="mailto:${member.email}" class="btn btn-light btn-sm" title="Email">
-                      <i class="bi bi-envelope"></i>
-                    </a>` : ''}
+                  <p class="card-text card-description d-none d-sm-block">
+                    ${member.description || ''}
+                  </p>
 
-                    ${member.ghlinks ? `<a href="${member.ghlinks}" class="btn btn-light btn-sm" title="GitHub">
-                      <i class="bi bi-github"></i>
-                    </a>` : ''}
+                  ${keywords
+                    ? `<p class="mt-2 keyword">${keywords
+                        .split(' ')
+                        .map(k => `#${k}`)
+                        .join(' ')
+                      }</p>`
+                    : ''}
 
-                    ${member.ytlinks ? `<a href="${member.ytlinks}" class="btn btn-light btn-sm" title="YouTube"> 
-                      <i class="bi bi-youtube"></i>
-                    </a>` : ''}
-
-                    ${member.blinks ? `<a href="${member.blinks}" class="btn btn-light btn-sm" title="Book"> 
-                      <i class="bi bi-link"></i>
-                    </a>` : ''}
+                  <div class="pt-2">
+                    ${member.fblinks
+                      ? `<a href="${member.fblinks}" class="btn btn-light btn-sm mr-1" title="Contact">
+                          <i class="bi bi-person-lines-fill"></i>
+                        </a>`
+                      : ''}
+                    ${member.email
+                      ? `<a href="mailto:${member.email}" class="btn btn-light btn-sm mr-1" title="Email">
+                          <i class="bi bi-envelope"></i>
+                        </a>`
+                      : ''}
+                    ${member.ghlinks
+                      ? `<a href="${member.ghlinks}" class="btn btn-light btn-sm mr-1" title="GitHub">
+                          <i class="bi bi-github"></i>
+                        </a>`
+                      : ''}
+                    ${member.ytlinks
+                      ? `<a href="${member.ytlinks}" class="btn btn-light btn-sm mr-1" title="YouTube">
+                          <i class="bi bi-youtube"></i>
+                        </a>`
+                      : ''}
+                    ${member.blinks
+                      ? `<a href="${member.blinks}" class="btn btn-light btn-sm" title="Book">
+                          <i class="bi bi-link"></i>
+                        </a>`
+                      : ''}
                   </div>
                 </div>
               </div>
-            `;
+
+            </div>  <!-- .row -->
+          </div>    <!-- .card -->
+        `;
+
 
           container.appendChild(memberDiv);
         });
