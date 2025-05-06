@@ -1,131 +1,158 @@
+import { calculateMemberStats, animateCount } from "./members/statistics.js";
+import { createMemberCard } from "./members/cardCreator.js";
+import { renderPaginationButtons } from "./members/pagination.js";
+
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("assets/data/members.json") // Load the JSON file
-    .then(response => response.json())
-    .then(data => {
+  // Add CSS to ensure proper grid layout
+  const style = document.createElement("style");
+  style.textContent = `
+    .isotope-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .isotope-item {
+      width: 50%;
+      box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .isotope-item {
+        width: 100%;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  fetch("assets/data/members_thesis.json")
+    .then((response) => response.json())
+    .then((data) => {
       const container = document.getElementById("members-container");
+      const MEMBERS_PER_PAGE = 8;
+      let allMemberElements = [];
+      let currentFilter = ".filter-studying";
+
+      // Calculate member statistics
+      const { alumniCount, phdCount } = calculateMemberStats(data);
+
+      // Update statistics in the DOM
+      const alumniTextElement = document.getElementById("total-alumni-text");
+      const phdTextElement = document.getElementById("total-phd-text");
+
+      if (alumniTextElement) {
+        animateCount(alumniTextElement, 0, alumniCount, 2000);
+      }
+      if (phdTextElement) {
+        animateCount(phdTextElement, 0, phdCount, 2000);
+      }
 
       // Clear container before adding new members
-      container.innerHTML = '';
+      container.innerHTML = "";
 
-      // Iterate over both studying and graduated members
-      Object.keys(data).forEach(category => {
-        // Sort members by `grade` in descending order (highest grade first)
-        data[category].sort((a, b) => (b.grade || 0) - (a.grade || 0));
+      // Create a cache for member elements
+      const memberElementCache = [];
 
-        data[category].forEach((member) => {
-          // Ensure required data exists
-          if (!member) {
-            return;
-          }
+      // Process members
+      Object.entries(data).forEach(([category, members]) => {
+        members.sort((a, b) => (b.grade || 0) - (a.grade || 0));
 
-          const memberDiv = document.createElement("div");
-          memberDiv.classList.add("col-12" ,"col-md-6","p-2", "isotope-item", `filter-${category}`, `filter-${member.degree}`);
+        members.forEach((member) => {
+          if (!member) return;
 
-          // Convert keyword array to a string if it exists
-          const keywords = member.keyword ? member.keyword.map(k => `<span class="badge bg-secondary me-1">${k}</span>`).join(' ') : '';
-
-          memberDiv.innerHTML = `
-          <div class="card shadow-sm">
-            <div class="row no-gutters w-100 d-flex justify-content-center align-items-center">
-
-                <div class="col-12 col-sm-4 ">
-                <img
-                  src="${member.img
-                    ? member.img
-                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name[0])}&background=ffff&rounded=true&size=200`}"
-                  class="card-img p-2"
-                  alt="${member.name}"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="col-12 col-sm-8">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    ${member.grade ? member.grade + '級 ' : ''}
-                    ${member.thesis
-                      ? `<a href="${member.thesis}">${member.name}</a>`
-                      : member.name}
-                  </h5>
-
-                  ${member.title
-                    ? `<p class="card-text">${category !== "studying"
-                        ? '現職：' + member.title
-                        : member.title
-                      }</p>`
-                    : ''}
-
-                  <p class="card-text card-description d-none d-sm-block">
-                    ${member.description || ''}
-                  </p>
-
-                  ${keywords
-                    ? `<p class="mt-2 keyword">${keywords
-                        .split(' ')
-                        .map(k => `#${k}`)
-                        .join(' ')
-                      }</p>`
-                    : ''}
-
-                  <div class="pt-2">
-                    ${member.fblinks
-                      ? `<a href="${member.fblinks}" class="btn btn-light btn-sm mr-1" title="Contact">
-                          <i class="bi bi-person-lines-fill"></i>
-                        </a>`
-                      : ''}
-                    ${member.email
-                      ? `<a href="mailto:${member.email}" class="btn btn-light btn-sm mr-1" title="Email">
-                          <i class="bi bi-envelope"></i>
-                        </a>`
-                      : ''}
-                    ${member.ghlinks
-                      ? `<a href="${member.ghlinks}" class="btn btn-light btn-sm mr-1" title="GitHub">
-                          <i class="bi bi-github"></i>
-                        </a>`
-                      : ''}
-                    ${member.ytlinks
-                      ? `<a href="${member.ytlinks}" class="btn btn-light btn-sm mr-1" title="YouTube">
-                          <i class="bi bi-youtube"></i>
-                        </a>`
-                      : ''}
-                    ${member.blinks
-                      ? `<a href="${member.blinks}" class="btn btn-light btn-sm" title="Book">
-                          <i class="bi bi-link"></i>
-                        </a>`
-                      : ''}
-                  </div>
-                </div>
-              </div>
-
-            </div>  <!-- .row -->
-          </div>    <!-- .card -->
-        `;
-
-
-          container.appendChild(memberDiv);
+          const memberDiv = createMemberCard(member, category);
+          memberElementCache.push(memberDiv.cloneNode(true));
+          allMemberElements.push(memberDiv);
         });
       });
 
-      // Initialize Isotope AFTER members are loaded
-      let iso = new Isotope('.isotope-container', {
-        itemSelector: '.isotope-item',
-        layoutMode: 'fitRows',
-        filter: '.filter-studying' // Default filter to show only "studying" members
+      // Pagination logic
+      function renderPage(pageIndex = 1) {
+        const filteredMembers = allMemberElements.filter((el) => {
+          if (currentFilter === "*") return true;
+          return el.matches(currentFilter);
+        });
+
+        const totalPages = Math.ceil(filteredMembers.length / MEMBERS_PER_PAGE);
+
+        // Clear container content
+        container.innerHTML = "";
+
+        // Create a row wrapper
+        const rowWrapper = document.createElement("div");
+        rowWrapper.className = "row w-100 m-0";
+        container.appendChild(rowWrapper);
+
+        const start = (pageIndex - 1) * MEMBERS_PER_PAGE;
+        const end = start + MEMBERS_PER_PAGE;
+        const visibleMembers = filteredMembers.slice(start, end);
+
+        // Render visible members
+        visibleMembers.forEach((memberEl, index) => {
+          const cachedElement =
+            memberElementCache[allMemberElements.indexOf(memberEl)];
+          if (!cachedElement) return;
+
+          const clone = cachedElement.cloneNode(true);
+          const delayClass = `animate-delay-${(index % 6) + 1}`;
+          clone.classList.add(delayClass);
+          clone.style.width = "";
+          rowWrapper.appendChild(clone);
+
+          const img = clone.querySelector("img");
+          if (img && img.getAttribute("data-original-src")) {
+            img.src = img.getAttribute("data-original-src");
+          }
+        });
+
+        // Update Isotope
+        setTimeout(() => {
+          if (iso) {
+            iso.destroy();
+            iso = new Isotope(".isotope-container", {
+              itemSelector: ".isotope-item",
+              layoutMode: "fitRows",
+              percentPosition: true,
+              filter: currentFilter,
+              transitionDuration: "0.5s",
+            });
+
+            imagesLoaded(container, function () {
+              iso.layout();
+            });
+          }
+        }, 50);
+
+        renderPaginationButtons(totalPages, pageIndex, renderPage);
+      }
+
+      // Initialize Isotope
+      let iso = new Isotope(".isotope-container", {
+        itemSelector: ".isotope-item",
+        layoutMode: "fitRows",
+        percentPosition: true,
+        filter: currentFilter,
       });
 
-      // Force Isotope to relayout after content is loaded
-      iso.layout();
+      // Force Isotope to relayout after images are loaded
+      imagesLoaded(container, function () {
+        iso.layout();
+      });
 
       // Filtering Logic
-      document.querySelectorAll('.member-filters li').forEach(filterBtn => {
+      document.querySelectorAll(".member-filters li").forEach((filterBtn) => {
         filterBtn.addEventListener("click", function () {
-          document.querySelector('.filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          let filterValue = this.getAttribute('data-filter');
-          iso.arrange({ filter: filterValue }); // Ensure the 'iso' instance is accessible here
+          document
+            .querySelector(".filter-active")
+            .classList.remove("filter-active");
+          this.classList.add("filter-active");
+          currentFilter = this.getAttribute("data-filter");
+          container.innerHTML = "";
+          iso.arrange({ filter: currentFilter });
+          setTimeout(() => renderPage(1), 50);
         });
       });
 
+      // Initial render
+      renderPage(1);
     })
-    .catch(error => console.error("Error loading JSON:", error));
+    .catch((error) => console.error("Error loading JSON:", error));
 });
