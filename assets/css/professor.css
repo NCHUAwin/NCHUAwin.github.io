@@ -269,6 +269,16 @@ section,
   overflow: clip;
 }
 
+/* Add scroll margin to sections to prevent navbar overlap */
+section[id] {
+  scroll-margin-top: 50px; /* Adjust this value based on your navbar height */
+}
+
+/* Add padding to the top of sections to prevent content from being hidden */
+.section {
+  padding-top: 50px; /* Match the scroll-margin-top value */
+}
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
