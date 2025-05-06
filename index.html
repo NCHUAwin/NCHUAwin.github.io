@@ -39,7 +39,9 @@
 
 <body class="index-page">
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <button class="header-toggle d-xl-none" aria-label="Toggle navigation" id="header-toggle-btn">
+      <i class="bi bi-list"></i>
+    </button>
 
     <div class="profile-img">
       <img src="assets/img/lab/logo.jpg" alt="" class="img-fluid rounded-circle" />
@@ -138,7 +140,8 @@
                     WSN & 6G
                   </td>
                   <td class="border border-gray-300 px-4 py-2 text-left">
-                    本研究主要使用強化式學習 (Reinforcement learning)與啟發式演算法 (Metaheuristic algorithm)來探討有關無線感測網路(Wireless Sensor Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。研究範圍：<br>
+                    本研究主要使用強化式學習 (Reinforcement learning)與啟發式演算法 (Metaheuristic algorithm)來探討有關無線感測網路(Wireless Sensor
+                    Network, WSN)以及 6G 等無線網路關鍵問題，並發展相關的創新研究與應用。研究範圍：<br>
                     (1) 存取控制 (Admission Control)<br>
                     (2) 壽命最佳化 (Lifetime Optimization)<br>
                     (3) 路由策略建構 (Routing strategy construction)<br>
@@ -209,12 +212,12 @@
 
     <!-- Member Section -->
     <section id="member" class="member section light-background">
-      <!-- Section Title -->
+
       <div class="container section-title" data-aos="fade-up">
         <div class="content justify-content-center pb-3">
-          <h2>Member</h2>
-          <p>迄今已培育 3 位博士生、超過 60 位碩士生，皆學有所成。</p>
-          <!-- End Section Title -->
+          <h2>Members</h2>
+          <p>迄今已培育 <span class="highlight-number" id="total-phd-text"> 3 </span> 位博士生、<span class="highlight-number"
+              id="total-alumni-text">0</span> 位碩士生，皆學有所成。</p>
         </div>
 
         <div class="container">
@@ -223,16 +226,20 @@
             <ul class="member-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
               <li data-filter="*">All</li>
               <li data-filter=".filter-studying" class="filter-active">Current</li>
-              <li data-filter=".filter-alumni">alumni</li>
-              <li data-filter=".filter-doctor">phd</li>
+              <li data-filter=".filter-alumni">Alumni</li>
+              <li data-filter=".filter-doctor">PHD</li>
             </ul>
             <!-- End member Filters -->
+            <div id="pagination" class="col-12 text-center mb-4"></div>
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-              <div id="members-container" class="col d-flex justify-content-center"></div> <!-- Add 'd-flex' here -->
+              <div id="members-container" class="col d-flex justify-content-center"></div>
               <!-- The actual member items will be injected here -->
-              <script src="assets/js/getMember.js"></script>
+              <script type="module" src="assets/js/getMember.js"></script>
             </div>
+
+            <div id="pagination" class="col-12 text-center mb-4"></div>
+
             <!-- End Portfolio Item -->
           </div>
         </div>
@@ -441,12 +448,12 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>
